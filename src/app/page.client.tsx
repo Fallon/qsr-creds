@@ -418,11 +418,11 @@ function HomeClientContent() {
               <Image src={'plus_black.svg'} width={30} height={30} alt="plus sign" />
               <Image src={'plus_black.svg'} width={30} height={30} alt="plus sign" />
             </div>
-            <ul className="flex gap-4 uppercase font-bold">
+            <ul className="flex gap-4 uppercase">
               <li>
                 <button 
                   onClick={() => scrollToSection('story')}
-                  className="hover:opacity-70 transition-opacity cursor-pointer"
+                  className="cursor-pointer uppercase"
                 >
                   The Arbys Story
                 </button>
@@ -430,7 +430,7 @@ function HomeClientContent() {
               <li>
                 <button 
                   onClick={() => scrollToSection('team')}
-                  className="hover:opacity-70 transition-opacity cursor-pointer"
+                  className="cursor-pointer uppercase"
                 >
                   Your Next Team
                 </button>
@@ -438,7 +438,7 @@ function HomeClientContent() {
               <li>
                 <button 
                   onClick={() => scrollToSection('more')}
-                  className="hover:opacity-70 transition-opacity cursor-pointer"
+                  className="cursor-pointer uppercase"
                 >
                   More than QSR
                 </button>
