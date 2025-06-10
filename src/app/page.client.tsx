@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import {
@@ -86,7 +86,7 @@ const VIDEOS = [
   }
 ];
 
-export default function HomeClient() {
+function HomeClientContent() {
   const searchParams = useSearchParams();
   const name = searchParams.get('name');
 
@@ -456,5 +456,13 @@ export default function HomeClient() {
         </nav>
       </footer>
     </div>
+  );
+}
+
+export default function HomeClient() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <HomeClientContent />
+    </Suspense>
   );
 }
