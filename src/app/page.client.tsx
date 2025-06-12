@@ -331,8 +331,10 @@ function HomeClientContent() {
             </div>
           </div>
         </section>
+
+
         <section id="team">
-          <div className="min-h-screen bg-[#f03010] relative flex items-center">
+          <div className="relative w-full aspect-[4/3] bg-[#f03010] flex items-center">
             {/* <div className="absolute w-[16%] left-[5%] top-[5%]">
               <img src="lockup_mpls.svg" alt="Fallon MPLS" className="w-full" />
             </div> */}
@@ -341,7 +343,7 @@ function HomeClientContent() {
               <img src="lockup_ny.svg" alt="Fallon New York" className="w-full" />
             </div> */}
 
-            <div className="absolute w-[12%] left-[66%] top-[22%] animate-spin">
+            <div className="absolute w-[12%] left-[66%] top-[12%] animate-spin">
               <img src="outsmart.svg" alt="Outsmart" className="w-full" />
             </div>
 
@@ -361,12 +363,16 @@ function HomeClientContent() {
               <img src="plus_pink.svg" alt="Pink Plus Sign" className="w-full" />
             </div> */}
 
-            <div className="absolute w-[60%] left-[40%] top-[39%] border-b-2 border-[#faf0e0] z-10">
+            <div className="absolute w-[46%] left-[30px] top-[80px] z-20 pointer-events-none">
+              <img src="meet_your_next_team.svg" alt="Meet your next team" className="w-full" />
+            </div>
+
+            <div className="absolute w-[71%] left-[29%] top-[21vw] border-b-2 border-[#faf0e0] z-10">
               <Swiper
                 className="custom-swiper"
                 modules={[Navigation, Pagination]}
                 spaceBetween={20}
-                slidesPerView={3.25}
+                slidesPerView={4.25}
                 slidesPerGroup={1}
                 navigation
                 pagination={{ clickable: true }}
@@ -391,23 +397,21 @@ function HomeClientContent() {
               </Swiper>
             </div>
 
-            <div className="absolute w-[60%] left-[5%] top-[35%] z-20 -translate-y-1/2 pointer-events-none">
-              <img src="meet_your_next_team.svg" alt="Meet your next team" className="w-full" />
+            <div className="absolute p-6 left-0 bottom-[2%] flex items-center justify-between w-full">
+              <div className="">
+                <Image src='plus.svg' width={30} height={30} alt="plus sign" />
+              </div>
+              <div className="">
+                <button onClick={() => scrollToSection('more')} className="cursor-pointer">
+                  <Image src="down_arrow_pink.svg" alt="Pink down arrow" width={40} height={40} />
+                </button>
+              </div>
+              <div className="">
+                <Image src='plus.svg' width={30} height={30} alt="plus sign" />
+              </div>
             </div>
 
-            <div className="absolute left-[40px] bottom-[15px] -translate-x-1/2 -translate-y-1/2">
-              <Image src='plus.svg' width={30} height={30} alt="plus sign" />
-            </div>
-
-            <div className="absolute right-[10px] bottom-[15px] -translate-x-1/2 -translate-y-1/2">
-              <Image src='plus.svg' width={30} height={30} alt="plus sign" />
-            </div>
-
-            <div className="absolute w-[40px] left-[50%] bottom-[15px] -translate-x-1/2 -translate-y-1/2">
-              <button onClick={() => scrollToSection('more')} className="cursor-pointer">
-                <img src="down_arrow_pink.svg" alt="Pink down arrow" className="w-full" />
-              </button>
-            </div>
+            
           </div>
         </section>
         <section id="more">
