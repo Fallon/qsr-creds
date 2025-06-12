@@ -31,7 +31,7 @@ export default function RootLayout({
           ${AntonRegular.variable}
           ${ITCGaramondBookNarrow.variable}
           ${PPMigraExtrabold.variable}
-          antialiased max-w-[1440px] mx-auto`}
+          antialiased`}
       >
         {children}
         <script src="https://player.vimeo.com/api/player.js"></script>

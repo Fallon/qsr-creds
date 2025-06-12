@@ -159,6 +159,10 @@
   left: -50px;
 }
 
+.profile-dialog > button {
+  display: none !important;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
