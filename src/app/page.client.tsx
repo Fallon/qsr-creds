@@ -244,9 +244,9 @@ function HomeClientContent() {
 
             <p className="font-family-garamond font-bold pb-3 leading-5">- Nikki Baker, Fallon CEO</p>
           </div>
-          <div className="absolute w-[20%] left-[88%] top-[70%] -translate-x-1/2 -translate-y-1/2 animate-wiggle">
+          <div className="absolute w-[10%] left-[88%] top-[70%] -translate-x-1/2 -translate-y-1/2 animate-wiggle">
             <a href="tel:+16127582345">
-              <img src="typewriter_pink.png" alt="lets chat" className="w-50" />
+              <Image src="/typewriter_pink.png" alt="lets chat" width={150} height={150} className="w-full" />
             </a>
           </div>
         </section>
@@ -279,54 +279,54 @@ function HomeClientContent() {
 
 
             <div className="absolute w-[28%] left-1/2 top-[52%] -translate-x-1/2 -translate-y-1/2">
-              <img src="fallon_f.svg" alt="Fallon F" className="w-full" />
+              <Image src="fallon_f.svg" alt="Fallon F" width={1200} height={1200} className="w-full" />
             </div>
 
             <div className="absolute w-[12%] left-[20%] top-[18%] -translate-x-1/2 -translate-y-1/2 animate-wiggle">
-              <img src="burger.png" alt="Burger" className="w-full" />
+              <Image src="/burger.png" alt="Burger" width={150} height={150} className="w-full" />
             </div>
 
             <div className="absolute w-[8%] left-[58%] top-[80%] -translate-x-1/2 -translate-y-1/2 animate-wiggle">
-              <img src="fries.png" alt="Fries" className="w-full" />
+              <Image src="/fries.png" alt="Fries" width={150} height={150} className="w-full" />
             </div>
 
             <div className="absolute w-[8%] left-[80%] top-[45%] -translate-x-1/2 -translate-y-1/2 animate-wiggle">
-              <img src="coffee.png" alt="Coffee" className="w-full" />
+              <Image src="/coffee.png" alt="Coffee" width={150} height={150} className="w-full" />
             </div>
 
             <div className="absolute w-[10%] left-[34%] top-[30%] -translate-x-1/2 -translate-y-1/2">
               <button className="cursor-pointer" onClick={() => openVideo('2p48Pr')}>
-                <img src="2p48Pr.png" alt="Thumbnail" className="w-full" />
+                <Image src="/2p48Pr.png" alt="Thumbnail" width={200} height={200} className="w-full" />
               </button>
             </div>
 
             <div className="absolute w-[12%] left-[68%] top-[20%] -translate-x-1/2 -translate-y-1/2">
               <button className="cursor-pointer" onClick={() => openVideo('F89VZB')}>
-                <img src="F89VZB.png" alt="Thumbnail" className="w-full" />
+                <Image src="/F89VZB.png" alt="Thumbnail" width={200} height={200} className="w-full" />
               </button>
             </div>
 
             <div className="absolute w-[12%] left-[52%] top-[50%] -translate-x-1/2 -translate-y-1/2">
               <button className="cursor-pointer" onClick={() => openVideo('GRCUX1')}>
-                <img src="GRCUX1.png" alt="Thumbnail" className="w-full" />
+                <Image src="/GRCUX1.png" alt="Thumbnail" width={200} height={200} className="w-full" />
               </button>
             </div>
 
             <div className="absolute w-[12%] left-[33%] top-[75%] -translate-x-1/2 -translate-y-1/2">
               <button className="cursor-pointer" onClick={() => openVideo('4NwHtX')}>
-                <img src="4NwHtX.png" alt="Thumbnail" className="w-full" />
+                <Image src="/4NwHtX.png" alt="Thumbnail" width={200} height={200} className="w-full" />
               </button>
             </div>
 
             <div className="absolute w-[22%] left-[74%] top-[75%] -translate-x-1/2 -translate-y-1/2">
               <button className="cursor-pointer" onClick={() => openVideo('QJmgVJ')}>
-                <img src="QJmgVJ.png" alt="Thumbnail" className="w-full" />
+                <Image src="/QJmgVJ.png" alt="Thumbnail" width={200} height={200} className="w-full" />
               </button>
             </div>
 
             <div className="absolute w-[40px] left-[50%] bottom-[15px] -translate-x-1/2 -translate-y-1/2">
               <button onClick={() => scrollToSection('team')} className="cursor-pointer">
-                <img src="down_arrow_black.svg" alt="Black down arrow" className="w-full" />
+                <Image src="/down_arrow_black.svg" alt="Black down arrow" width={40} height={40} className="w-full" />
               </button>
             </div>
           </div>
@@ -344,11 +344,11 @@ function HomeClientContent() {
             </div> */}
 
             <div className="absolute w-[12%] left-[66%] top-[12%] animate-spin">
-              <img src="outsmart.svg" alt="Outsmart" className="w-full" />
+              <Image src="/outsmart.svg" alt="Outsmart" width={100} height={100} className="w-full" />
             </div>
 
             <div className="absolute w-[12%] left-[12%] top-[60%] animate-spin-backwards">
-              <img src="outspend.svg" alt="Outspend" className="w-full" />
+              <Image src="/outspend.svg" alt="Outspend" width={100} height={100} className="w-full" />
             </div>
 
             {/* <div className="absolute w-[2%] left-[90%] top-[15%] -translate-x-[100%] flex gap-1">
@@ -364,7 +364,7 @@ function HomeClientContent() {
             </div> */}
 
             <div className="absolute w-[46%] left-[30px] top-[80px] z-20 pointer-events-none">
-              <img src="meet_your_next_team.svg" alt="Meet your next team" className="w-full" />
+              <Image src="/meet_your_next_team.svg" alt="Meet your next team" width={1024} height={1024} className="w-full" />
             </div>
 
             <div className="absolute w-[71%] left-[29%] top-[21vw] border-b-2 border-[#faf0e0] z-10">
@@ -387,7 +387,7 @@ function HomeClientContent() {
                 {PROFILES.map((member, index) => (
                   <SwiperSlide key={index}>
                     <div className="flex flex-col justify-start cursor-pointer" onClick={() => openProfile(member.slug)}>
-                      <img src={member.image} alt={member.name} className="w-full -mb-2" />
+                      <Image src={`/${member.image}`} alt={member.name} width={300} height={300} className="w-full -mb-2" />
                       <p className="text-5xl font-family-anton uppercase tracking-wide leading-11 text-[#fdaaff] mb-2 pb-2 border-b-2 border-[#faf0e0] whitespace-pre-line">{member.name.split(' ').join('\n')}</p>
                       <p className="font-family-garamond text-md font-bold mb-1 text-[#fdaaff]">{member.title}</p>
                       <p className="font-family-anton uppercase text-sm text-[#faf0e0]">{member.description}</p>
@@ -432,10 +432,10 @@ function HomeClientContent() {
       <footer className="bg-[#fdaaff] pt-10 pb-2">
         <div className="w-full">
           <div className="flex items-center justify-center gap-16 mb-8">
-            <img src="ready_for_a_change.svg" alt="ready for a change" className="w-80" />
-            <img src="zig_zag_arrow.svg" alt="lightning bolt" className="w-72" />
+            <Image src="/ready_for_a_change.png" alt="ready for a change" width={250} height={250} className="w-80" />
+            <Image src="/zig_zag_arrow.svg" alt="lightning bolt" width={200} height={100} className="w-72" />
             <a href="tel:+16127582345" className="animate-wiggle">
-              <img src="typewriter_red.png" alt="lets chat" className="w-50" />
+              <Image src="/typewriter_red.png" alt="lets chat" width={150} height={150} className="w-50" />
             </a>
           </div>
         </div>
@@ -487,7 +487,7 @@ function HomeClientContent() {
                 <div className="flex flex-col">                  
                   <div className="flex flex-col justofy-start">
                     <div className="w-[240px]">
-                      <img src={selectedProfile.image} alt={selectedProfile.name} className="w-full -mb-2" />
+                      <Image src={`/${selectedProfile.image}`} alt={selectedProfile.name} width={240} height={240} className="w-full -mb-2" />
                     </div>
                     <p className="text-5xl font-family-anton uppercase tracking-wide leading-11 text-[#f03010] mb-2 pb-2 border-b-2 border-[#f03010] whitespace-pre-line cursor-pointer">{selectedProfile.name.split(' ').join('\n')}</p>
                     <p className="font-family-garamond text-md font-bold mb-1 text-[#f03010]">{selectedProfile.title}</p>
