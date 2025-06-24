@@ -104,6 +104,14 @@ const VIDEOS = [
   }
 ];
 
+const SECTIONS = [
+  { id: 'hello', dark: false },
+  { id: 'reel', dark: true },
+  { id: 'story', dark: false },
+  { id: 'team', dark: false },
+  { id: 'more', dark: true }
+];
+
 function HomeClientContent() {
   const searchParams = useSearchParams();
   const name = searchParams.get('name');
@@ -116,19 +124,13 @@ function HomeClientContent() {
   const [ isProfileDialogOpen, setIsProfileDialogOpen ] = useState(false);
 
   useEffect(() => {
-    const sections = [
-      { id: 'hello', dark: false },
-      { id: 'reel', dark: true },
-      { id: 'story', dark: true },
-      { id: 'team', dark: false },
-      { id: 'more', dark: false }
-    ];
+    
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const sectionConfig = sections.find(s => s.id === entry.target.id);
+            const sectionConfig = SECTIONS.find(s => s.id === entry.target.id);
             if (sectionConfig) {
               setNavDark(sectionConfig.dark);
             }
@@ -141,7 +143,7 @@ function HomeClientContent() {
       }
     );
 
-    sections.forEach(({ id }) => {
+    SECTIONS.forEach(({ id }) => {
       const element = document.getElementById(id);
       if (element) {
         observer.observe(element);
@@ -149,7 +151,7 @@ function HomeClientContent() {
     });
 
     return () => {
-      sections.forEach(({ id }) => {
+      SECTIONS.forEach(({ id }) => {
         const element = document.getElementById(id);
         if (element) {
           observer.unobserve(element);
@@ -254,73 +256,95 @@ function HomeClientContent() {
         <section id="reel">
           <div className="aspect-video relative"><iframe className="absolute top-0 left-0 w-full h-full" src="https://player.vimeo.com/video/1081861477?h=d7f676fc2d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Fallon Reel 2025"></iframe></div>
         </section>
+
         <section id="story">
-          <div className="min-h-screen bg-[url('/work-bg@2x.png')] bg-cover bg-center relative flex items-center">
-            <div className="flex flex-col w-90 absolute left-10">
-              <h2 className="text-6xl font-family-anton uppercase tracking-wide pb-3 text-black leading-14">Some<br />of Our Favorite Projects</h2>
-              <p className="font-family-garamond font-bold pb-3 leading-5 text-black">These ideas moved culture, and more importantly, sandwiches.</p>
+          <div className="aspect-[1/1.1] bg-[url('/bg_sky-80.jpg')] bg-cover bg-center relative flex items-center">
+            <div className="flex flex-col w-[20%] absolute top-[20%] left-10">
+              <Image src="/favorite_projects.svg" alt="Some of our favorite projects" width={500} height={1200} className="w-[90%] mb-4" />
+              {/* <h2 className="text-6xl font-family-anton uppercase tracking-wide pb-3 text-black leading-14">Some<br />of Our Favorite Projects</h2> */}
+              <p className="font-family-garamond font-bold pb-3 leading-8 text-white text-3xl">These ideas moved culture, and more importantly, sandwiches.</p>
             </div>
 
-            {/* <div className="absolute w-[3%] left-[5%] top-[6%] -translate-x-1/2 -translate-y-1/2">
-              <img src="plus_black.svg" alt="Black plus sign" className="w-full" />
-            </div> */}
-
-            {/* <div className="absolute w-[3%] left-[95%] top-[6%] -translate-x-1/2 -translate-y-1/2">
-              <img src="plus_black.svg" alt="Black plus sign" className="w-full" />
-            </div> */}
-
-            {/* <div className="absolute w-[3%] left-[95%] top-[94%] -translate-x-1/2 -translate-y-1/2">
-              <img src="plus_black.svg" alt="Black plus sign" className="w-full" />
-            </div> */}
-
-            {/* <div className="absolute w-[3%] left-[5%] top-[94%] -translate-x-1/2 -translate-y-1/2">
-              <img src="plus_black.svg" alt="Black plus sign" className="w-full" />
-            </div> */}
-
-
-            <div className="absolute w-[28%] left-1/2 top-[52%] -translate-x-1/2 -translate-y-1/2">
-              <Image src="fallon_f.svg" alt="Fallon F" width={1200} height={1200} className="w-full" />
+            <div className="absolute w-[6%] left-[25%] top-[23%] -translate-x-1/2 -translate-y-1/2">
+              <Image src="arrow_1.svg" alt="Arrow" width={300} height={1200} className="w-full" />
             </div>
 
-            <div className="absolute w-[12%] left-[20%] top-[18%] -translate-x-1/2 -translate-y-1/2 animate-wiggle">
-              <Image src="/burger.png" alt="Burger" width={150} height={150} className="w-full" />
+            <div className="absolute w-[6%] right-[5%] top-[15%] -translate-x-1/2 -translate-y-1/2 -scale-x-100 rotate-[160deg]">
+              <Image src="arrow_1.svg" alt="Arrow" width={300} height={1200} className="w-full" />
             </div>
 
-            <div className="absolute w-[8%] left-[58%] top-[80%] -translate-x-1/2 -translate-y-1/2 animate-wiggle">
-              <Image src="/fries.png" alt="Fries" width={150} height={150} className="w-full" />
+            <div className="absolute w-[6%] right-[22%] top-[35%] -translate-x-1/2 -translate-y-1/2 rotate-[10deg]">
+              <Image src="arrow_2.svg" alt="Arrow" width={300} height={1200} className="w-full" />
             </div>
 
-            <div className="absolute w-[8%] left-[80%] top-[45%] -translate-x-1/2 -translate-y-1/2 animate-wiggle">
-              <Image src="/coffee.png" alt="Coffee" width={150} height={150} className="w-full" />
+            <div className="absolute w-[8%] left-[45%] top-[75%] -translate-x-1/2 -translate-y-1/2 -scale-x-100 rotate-[10deg]">
+              <Image src="arrow_1.svg" alt="Arrow" width={300} height={1200} className="w-full" />
             </div>
 
-            <div className="absolute w-[10%] left-[34%] top-[30%] -translate-x-1/2 -translate-y-1/2">
-              <button className="cursor-pointer" onClick={() => openVideo('2p48Pr')}>
-                <Image src="/2p48Pr.png" alt="Thumbnail" width={200} height={200} className="w-full" />
+            <div className="absolute w-[5%] right-[12%] top-[70%] -translate-x-1/2 -translate-y-1/2 rotate-[0deg]">
+              <Image src="arrow_3.svg" alt="Arrow" width={300} height={1200} className="w-full" />
+            </div>
+
+            <div className="absolute w-[40%] left-[10%] top-[8%]">
+              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('2p48Pr')}>
+                <Image src="/tiktok.png" alt="TikTok" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+                <Image src="/tiktok_overlay.svg" alt="TikTok Overlay" width={768} height={768} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full invisible group-hover/item:visible" />
               </button>
             </div>
 
-            <div className="absolute w-[12%] left-[68%] top-[20%] -translate-x-1/2 -translate-y-1/2">
-              <button className="cursor-pointer" onClick={() => openVideo('F89VZB')}>
-                <Image src="/F89VZB.png" alt="Thumbnail" width={200} height={200} className="w-full" />
+            <div className="absolute w-[32%] left-[30%] top-[15%]">
+              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('2p48Pr')}>
+                <Image src="/sandwich_tattoo.png" alt="Sandwich Tattoo" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+                <Image src="/sandwich_tattoo_overlay.svg" alt="Sandwich Tattoo Overlay" width={768} height={768} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] invisible group-hover/item:visible" />
               </button>
             </div>
 
-            <div className="absolute w-[12%] left-[52%] top-[50%] -translate-x-1/2 -translate-y-1/2">
-              <button className="cursor-pointer" onClick={() => openVideo('GRCUX1')}>
-                <Image src="/GRCUX1.png" alt="Thumbnail" width={200} height={200} className="w-full" />
+            <div className="absolute w-[26%] left-[60%] top-[6%]">
+              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('2p48Pr')}>
+                <Image src="/good_burger_2.png" alt="Good Burger 2" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+                <Image src="/good_burger_2_overlay.svg" alt="Good Burger 2 Overlay" width={768} height={768} className="w-[85%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
               </button>
             </div>
 
-            <div className="absolute w-[12%] left-[33%] top-[75%] -translate-x-1/2 -translate-y-1/2">
-              <button className="cursor-pointer" onClick={() => openVideo('4NwHtX')}>
-                <Image src="/4NwHtX.png" alt="Thumbnail" width={200} height={200} className="w-full" />
+            <div className="absolute w-[19%] left-[78%] top-[30%]">
+              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('2p48Pr')}>
+                <Image src="/smoked_sweats.png" alt="Meat Sweats" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+                <Image src="/meat_sweats_overlay.svg" alt="Meat Sweats Overlay" width={768} height={768} className="w-[90%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
               </button>
             </div>
 
-            <div className="absolute w-[22%] left-[74%] top-[75%] -translate-x-1/2 -translate-y-1/2">
-              <button className="cursor-pointer" onClick={() => openVideo('QJmgVJ')}>
-                <Image src="/QJmgVJ.png" alt="Thumbnail" width={200} height={200} className="w-full" />
+            <div className="absolute w-[24%] left-[2%] top-[44%]">
+              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('2p48Pr')}>
+                <Image src="/vodka.png" alt="Vodka" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+                <Image src="/vodka_overlay.svg" alt="Vodka Overlay" width={768} height={768} className="w-[90%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
+              </button>
+            </div>
+
+            <div className="absolute w-[23%] left-[26%] top-[46%]">
+              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('2p48Pr')}>
+                <Image src="/order_of_potato_cakes.png" alt="The Order of Potato Cakes" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+                <Image src="/order_of_potato_cakes_overlay.svg" alt="The Order of Potato Cakes Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
+              </button>
+            </div>
+
+            <div className="absolute w-[20%] left-[54%] top-[44%]">
+              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('2p48Pr')}>
+                <Image src="/diablo_dare.png" alt="Diablo Dare" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+                <Image src="/diablo_dare_overlay.svg" alt="Diablo Dare Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
+              </button>
+            </div>
+
+            <div className="absolute w-[30%] left-[12%] top-[72%]">
+              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('2p48Pr')}>
+                <Image src="/lie_detector_test.png" alt="Lie Detector Test" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+                <Image src="/lie_detector_test_overlay.svg" alt="Lie Detector Test Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
+              </button>
+            </div>
+
+            <div className="absolute w-[40%] left-[45%] bottom-[-1%]">
+              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('2p48Pr')}>
+                <Image src="/pusha_t_diss.png" alt="Push T Diss" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+                <Image src="/pusha_t_diss_overlay.svg" alt="Push T Diss Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
               </button>
             </div>
 
@@ -414,7 +438,7 @@ function HomeClientContent() {
             
           </div>
         </section>
-        <section id="more">
+        {/*<section id="more">
           <div className="min-h-screen relative bg-[#0e191f] flex flex-col items-center justify-center p-12">
             <div className="top-16 left-0 flex items-center justify-around w-full -mb-4 z-20">
               <div className="w-1/2 flex justify-center">
@@ -427,12 +451,72 @@ function HomeClientContent() {
 
             <div className="w-[90%] aspect-video relative z-10"><iframe className="absolute top-0 left-0 w-full h-full" src="https://player.vimeo.com/video/1081861477?h=d7f676fc2d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Fallon Reel 2025"></iframe></div>
           </div>
+        </section>*/}
+
+        <section id="more">
+          <div className="min-h-screen bg-[url('/work-bg@2x.png')] bg-cover bg-center relative flex items-center">
+            <div className="flex flex-col w-90 absolute top-[20%] left-10">
+              <h2 className="text-7xl font-family-anton uppercase tracking-wide mb-8 text-black leading-16">But we do a lote more than QSR</h2>
+              <p className="font-family-garamond font-bold pb-3 text-3xl leading-7 text-black">Becuase a well-rounded agency does better work.</p>
+            </div>
+
+            {/* <div className="absolute w-[3%] left-[5%] top-[6%] -translate-x-1/2 -translate-y-1/2">
+              <img src="plus_black.svg" alt="Black plus sign" className="w-full" />
+            </div> */}
+
+            {/* <div className="absolute w-[3%] left-[95%] top-[6%] -translate-x-1/2 -translate-y-1/2">
+              <img src="plus_black.svg" alt="Black plus sign" className="w-full" />
+            </div> */}
+
+            {/* <div className="absolute w-[3%] left-[95%] top-[94%] -translate-x-1/2 -translate-y-1/2">
+              <img src="plus_black.svg" alt="Black plus sign" className="w-full" />
+            </div> */}
+
+            {/* <div className="absolute w-[3%] left-[5%] top-[94%] -translate-x-1/2 -translate-y-1/2">
+              <img src="plus_black.svg" alt="Black plus sign" className="w-full" />
+            </div> */}
+
+
+            <div className="absolute w-[28%] left-1/2 top-[52%] -translate-x-1/2 -translate-y-1/2">
+              <Image src="fallon_f.svg" alt="Fallon F" width={1200} height={1200} className="w-full" />
+            </div>
+
+            <div className="absolute w-[20%] left-[40%] top-[20%] -translate-x-1/2 -translate-y-1/2">
+              <button className="cursor-pointer" onClick={() => openVideo('F89VZB')}>
+                <Image src="/F89VZB.png" alt="Thumbnail" width={300} height={300} className="w-full" />
+              </button>
+            </div>
+
+            <div className="absolute w-[25%] left-[75%] top-[20%] -translate-x-1/2 -translate-y-1/2">
+              <button className="cursor-pointer" onClick={() => openVideo('2p48Pr')}>
+                <Image src="/black_friday.png" alt="Black Friday" width={300} height={300} className="w-full" />
+              </button>
+            </div>
+
+            <div className="absolute w-[25%] left-[28%] top-[60%] -translate-x-1/2 -translate-y-1/2">
+              <button className="cursor-pointer" onClick={() => openVideo('4NwHtX')}>
+                <Image src="/deal_book.png" alt="Deal Book" width={300} height={300} className="w-full" />
+              </button>
+            </div>
+
+            <div className="absolute w-[23%] left-[74%] top-[60%] -translate-x-1/2 -translate-y-1/2">
+              <button className="cursor-pointer" onClick={() => openVideo('GRCUX1')}>
+                <Image src="/cheezit.png" alt="Cheez-It" width={300} height={300} className="w-full" />
+              </button>
+            </div>
+
+            {/* <div className="absolute w-[40px] left-[50%] bottom-[15px] -translate-x-1/2 -translate-y-1/2">
+              <button onClick={() => scrollToSection('team')} className="cursor-pointer">
+                <Image src="/down_arrow_black.svg" alt="Black down arrow" width={40} height={40} className="w-full" />
+              </button>
+            </div> */}
+          </div>
         </section>
       </main>
-      <footer className="bg-[#fdaaff] pt-10 pb-2">
+      <footer className="bg-[url(/bg_footer-80.jpg)] bg-cover bg-center pt-10 pb-2">
         <div className="w-full">
           <div className="flex items-center justify-center gap-16 mb-8">
-            <Image src="/ready_for_a_change.png" alt="ready for a change" width={250} height={250} className="w-80" />
+            <Image src="/make_some_magic.svg" alt="wanna make some magic?" width={250} height={250} className="w-80" />
             <Image src="/zig_zag_arrow.svg" alt="lightning bolt" width={200} height={100} className="w-72" />
             <a href="tel:+16127582345" className="animate-wiggle">
               <Image src="/typewriter_red.png" alt="lets chat" width={150} height={150} className="w-50" />
