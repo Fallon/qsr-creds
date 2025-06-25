@@ -17,6 +17,22 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Fallon QSR",
   description: "Your next team",
+  openGraph: {
+    title: "Fallon QSR",
+    description: "Your next team",
+    url: "https://qsr.fallon.com",
+    siteName: "Fallon QSR",
+    images: [
+      {
+        url: `${process.env.VERCEL_URL ? "https" : "http"}://${process.env.VERCEL_URL || "localhost:3000"}/share-image.webp`,
+        width: 1200,
+        height: 630,
+        alt: "Fallon QSR",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
