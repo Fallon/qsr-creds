@@ -313,7 +313,7 @@ function HomeClientContent() {
               <span className="flex gap-2">Hi there! <Image src={'asterisk.svg'} width={54} height={54} alt="asterisk" /></span>{name ? `${name}!` : ''}
             </h2>
 
-            <p className="font-family-garamond pb-3 leading-5">Not sure if you heard, but after more than a decade, Fallon and Arby’s are parting ways. We couldn’t be prouder of the work we’ve done and how we changed their business. Now we’re looking to change someone else’. So take a look at what we do and if you’re looking to shake up QSR, give us a call.</p>
+            <p className="font-family-garamond pb-3 leading-5">Not sure if you heard, but after more than a decade, Fallon and Arby’s are parting ways. We couldn’t be prouder of the work we’ve done and how we changed their business. Now we’re looking to change someone else. So take a look at what we do and if you’re looking to shake up QSR, give us a call.</p>
 
             <p className="font-family-garamond font-bold pb-3 leading-5">- Nikki Baker, Fallon CEO</p>
           </div>
@@ -529,8 +529,8 @@ function HomeClientContent() {
         <section id="more">
           <div className="min-h-screen bg-[url('/work-bg@2x.png')] bg-cover bg-center relative flex items-center">
             <div className="flex flex-col w-90 absolute top-[20%] left-10">
-              <h2 className="text-7xl font-family-anton uppercase tracking-wide mb-8 text-black leading-16">But we do a lote more than QSR</h2>
-              <p className="font-family-garamond font-bold pb-3 text-3xl leading-7 text-black">Becuase a well-rounded agency does better work.</p>
+              <h2 className="text-7xl font-family-anton uppercase tracking-wide mb-8 text-black leading-16">But we do a lot more than QSR</h2>
+              <p className="font-family-garamond font-bold pb-3 text-3xl leading-7 text-black">Because a well-rounded agency does better work.</p>
             </div>
 
             {/* <div className="absolute w-[3%] left-[5%] top-[6%] -translate-x-1/2 -translate-y-1/2">
