@@ -29,6 +29,15 @@ const PROFILES = [
     bio: "Chris has spent the last 20 years leading large-scale clients to outsized growth. He cut his teeth in advertising working on Porsche, launching the Cayenne and the Cayman, and running their American LeMans racing communications. From there, he launched the Love campaign for Subaru, which skyrocketed their growth. With his knowledge and passion for automotive, he then went to work with Ford Commercial, helped Chrysler bounce back after bankruptcy, and ran multiple streams of business for the Cadillac account.\n\nOver the last ten years, Chris has stewarded Arby’s account at Fallon. Through that, he’s learned the importance of transparency and knowing the client’s business as well as they do. Seen as a true partner, he’s helped bring everything from comms support to product and menu innovation. The acclaimed ‘We Have the Meats’ campaign grew Arby’s same store sales for 10 straight years driving AUVs from $800k to $1.45MM.\n\nChris and his work have been recognized for numerous industry awards, multiple Effies, Lions, and more. His parents are also very proud of him.\n\nChris collects hobbies. Recently, fly fishing, woodworking, basic home maintenance, small engine repair, and landscaping have been the focus. He has a nine-year-old daughter, a German Wirehaired Pointer, and a wife who is out of his league. They all mostly like him."
   },
   {
+    slug: "erin_simle",
+    name: "Erin Simle",
+    location: "msp",
+    title: "Head of Production",
+    image: "erin_simle.webp",
+    description: "",
+    bio: "As Head of Production at Fallon, Erin Simle leads her production team with a respect for exceptional creativity and fierce efficiency. With over a decade of QSR and food-related work on her reel, she works to find ways to achieve the best-in-class craft and creativity matched with speed and efficiency for an evolving media landscape.\n\nAs a part of Publicis Productions and fueled by Production Intelligence, Erin and the production team are able to unlock value across all content needs. From content production origination through adaptation, localization and versioning. Bridging needs from creative craft, agile content fit for platform and personalized content at scale.",
+  },
+  {
     slug: "payton_gallogly",
     name: "Payton Gallogly",
     location: "msp",
