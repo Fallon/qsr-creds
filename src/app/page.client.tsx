@@ -327,7 +327,7 @@ function HomeClientContent() {
             <p className="font-family-garamond font-bold pb-3 leading-5">- Nikki Baker, Fallon CEO</p>
           </div>
           <div className="absolute w-[10%] left-[88%] top-[70%] -translate-x-1/2 -translate-y-1/2 animate-wiggle">
-            <a href="tel:+16127582345">
+            <a href="mailto:newbusiness@fallon.com?subject=From%20QSR%20Site" className="cursor-pointer">
               <Image src="/typewriter_pink.png" alt="lets chat" width={150} height={150} className="w-full" />
             </a>
           </div>
@@ -600,7 +600,7 @@ function HomeClientContent() {
           <div className="flex items-center justify-center gap-16 mb-8">
             <Image src="/make_some_magic.svg" alt="wanna make some magic?" width={250} height={250} className="w-80" />
             <Image src="/zig_zag_arrow.svg" alt="lightning bolt" width={200} height={100} className="w-72" />
-            <a href="tel:+16127582345" className="animate-wiggle">
+            <a href="mailto:newbusiness@fallon.com?subject=From%20QSR%20Site" className="animate-wiggle cursor-pointer">
               <Image src="/typewriter_red.png" alt="lets chat" width={150} height={150} className="w-50" />
             </a>
           </div>
