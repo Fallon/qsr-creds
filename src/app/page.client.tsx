@@ -30,14 +30,14 @@ const PROFILES = [
     linkedin: "https://www.linkedin.com/in/campbellca/"
   },
   {
-    slug: "erin_simle",
-    name: "Erin Simle",
+    slug: "joe_johnson",
+    name: "Joe Johnson",
     location: "msp",
-    title: "Head of Production",
-    image: "erin_simle.webp",
+    title: "Group Creative Director",
+    image: "joe_johnson.webp",
     description: "",
-    bio: "As Head of Production at Fallon, Erin Simle leads her production team with a respect for exceptional creativity and fierce efficiency. With over a decade of QSR and food-related work on her reel, she works to find ways to achieve the best-in-class craft and creativity matched with speed and efficiency for an evolving media landscape.\n\nAs a part of Publicis Productions and fueled by Production Intelligence, Erin and the production team are able to unlock value across all content needs. From content production origination through adaptation, localization and versioning. Bridging needs from creative craft, agile content fit for platform and personalized content at scale.",
-    linkedin: "https://www.linkedin.com/in/erinsimle/"
+    bio: "Just like it says in the header above this sentence, I’m a Group Creative Director at Fallon.\n\nIn the last 20 years, I’ve been a visual designer, art director, and creative director, working on brands like Nike, Verizon, Intel, Walmart, and Mastercard before finding my way to Fallon 11 years ago. My years at Fallon have been spent crafting, launching, and leading campaigns for consumer packaged goods (International Delight, Silk, Woodford Reserve, Bertolli), financial products (H&R Block, Rocket Mortgage, TaxAct), and retail brands (Arby’s, Massage Envy).\n\nI’ve steered the creative ship for Arby’s over the last 5 years. My work for Arby’s has been recognized via Cannes Lions, D&AD, Clios, AICP, Andy, ADDY, EFFIES, as well as a ton of regular people who are not creative advertising awards judges.\n\nOutside of work, I like to grill/smoke BBQ, maintain my DuoLingo streak, read old comic books, collect tattoos, and spend time with my fam— wife, teen daughter, and cockapoo.",
+    linkedin: "https://www.linkedin.com/in/hirejoejohnson/"
   },
   {
     slug: "payton_gallogly",
@@ -60,34 +60,34 @@ const PROFILES = [
     linkedin: "https://www.linkedin.com/in/pindellemma"
   },
   {
-    slug: "julia_frayne",
-    name: "Julia Frayne",
+    slug: "ashley_kim",
+    name: "Ashley Kim",
     location: "msp",
-    title: "Account Director",
-    image: "julia_frayne.webp",
+    title: "Senior Program Manager",
+    image: "ashley_kim.webp",
     description: "",
-    bio: "Julia is an Account Director who has been at Fallon for almost 8 years. She got her start in advertising working on several CPG brands from the Danone portfolio including Silk and International Delight, as well as Massage Envy. From there she transitioned into the world of QSR working on Arby’s ample experience leading National Campaigns, LTO’s and award winning activations. She also helped bring to life the world’s first ever shoppable movie for Walmart’s holiday campaign, paving the way for how companies tackle the future of social commerce.\n\nShe thrives on working hip to hip with strategy, production and creative teams to bring smart, breakthrough work to life in new and interesting ways. Julia leads with positivity and builds strong, trusting relationships with all of her clients and agency partners.\n\nWhen not working, Julia loves to travel the world, 43 countries and counting. If you have a trip planned, she has a spreadsheet of recommendations to share with you. When not traveling, she calls Minneapolis home with her three chickens.",
-    linkedin: "https://www.linkedin.com/in/julia-frayne-8aba7668/"
+    bio: "Ashley is a Senior Program Manager who combines creative problem solving with her knack for process and organization to navigate teams deftly through projects of all sizes and complexities. A challenge seeker and puzzle lover, Ashley chases the thrill of finding and creating order within chaos. As the lead PM on Arby’s since joining Fallon just over a year ago, she has successfully operationalized the team to be more nimble and efficient in order to deliver quality national integrated campaigns and cultural activations at the speed of retail.\n\nAshley’s biggest joy in life—and the main way she explores new cultures and stays connected to her own—is eating good food. Naturally, her favorite brands she’s worked on previously have been the likes of General Mills, King Arthur Baking Company, CLIF Bar and Company, and Sociable Cider Werks, though her experience spans a wide variety of industries including sports, hospitality, agriculture, and finance.\n\nIn her spare time, Ashley loves exploring new restaurants and coffee shops, watching mukbang videos, making latte art, looting treasure chests in video games, and hanging out with her corgi.",
+    linkedin: "https://www.linkedin.com/in/ashleyakim/"
   },
   {
-    slug: "adam_chorney",
-    name: "Adam Chorney",
+    slug: "mara_keller",
+    name: "Mara Keller",
     location: "msp",
-    title: "Group Strategy Director",
-    image: "adam_chorney.webp",
+    title: "Group Social Director",
+    image: "mara_keller.webp",
     description: "",
-    bio: "Hi, I’m Adam. I’ve been in Minneapolis working as a strategist at Fallon for the past 20 years. I moved here to learn from the agency’s pioneering connection planning department, where I spent 6 years primarily leading the NBC Universal media account, and eventually rising to become Director of Connection Planning. In recent years I’ve been more of an all-purpose strategist, leading brand strategy for many of our biggest clients, including Cadillac, H&R Block, and Arby’s. I’ve also developed a bit of a specialty in food brands of late, working across the Jack Link’s portfolio of meat snacks brands, the Mizkan portfolio of sauce brands (particularly Bertolli pasta sauce), and Cuisinart’s lineup of kitchen appliances.\n\nMy team’s work has regularly been recognized for creativity and effectiveness at the EFFIES, Cannes Lions, Creative Media Awards, and Jay Chiat Strategy Awards.\n\nPrior to Fallon, I was in New York at The Media Kitchen, where I worked on creative media strategies for brands like Sci Fi Channel and Delta’s Song Airlines.\n\nOn the home front, me, my wife Jessica, and our suddenly teenaged daughter Lucinda are living the Minneapolis transplant’s dream with an old house on a creek in the heart of the city.",
-    linkedin: "https://www.linkedin.com/in/adamchorney"
+    bio: "Mara is a Group Social Director, with over a decade of experience uniting brands and internet culture. Mara has spent most of that decade at Fallon, working across categories including spirits, hospitality, entertainment, and QSR.\n\nHer expertise has created break-through moments for brands like Arby’s, Paramount+, and SHOWTIME. She’s helped Arby’s trend on TikTok and fostered fandoms for series like Shameless, Yellowjackets, and Dexter. Her work has helped drive the success of Arby’s brand activations over the last five years, consistently earning national media coverage and even recognition from Cannes.\n\nOutside of work, Mara is living out her unrealized dreams of being a competitive figure skater, working in her garden, and planning her next hiking trip.",
+    linkedin: "https://www.linkedin.com/in/marakeller/"
   },
   {
-    slug: "brandon_fields",
-    name: "Brandon Fields",
+    slug: "cassie_dkae_lendway",
+    name: "Cassie D’kae Lendway",
     location: "msp",
-    title: "Account Supervisor",
-    image: "brandon_fields.webp",
+    title: "Senior Account Director",
+    image: "cassie_dkae_lendway.webp",
     description: "",
-    bio: "Brandon Fields is an Account Supervisor and a native of New York City, having been with Fallon for just over a year. He is passionate about fostering strong relationships and creating collaborative environments to produce the best work possible. No stranger to Publicis Groupe, Brandon began his career at Sapient Razorfish, where he worked on CPG and tech brands, including Church and Dwight and Samsung.\n\nPrior to joining Fallon, Brandon spent three years at Wieden & Kennedy, managing vehicle reveals and launches for iconic nameplates such as Mustang, F-150, Bronco, and their SUV lineup.\n\nAt Fallon, Brandon hit the ground running. He has led national campaigns, limited-time offers, and activations for the Arby’s brand, enjoying every moment. His most recent project was the Arby’s AC Barbecue campaign, where he collaborated with well-known comedians and actors Anthony Anderson and Cedric the Entertainer. This campaign featured their signature BBQ sauces paired with Arby’s 1/4lb pulled pork and 1/4lb brisket sandwiches. Brandon thrives on collaboration and works closely with strategy, creative, and production teams to make the impossible possible.\n\nBrandon enjoys watching a good show in his free time, traveling solo, and exploring new culinary experiences.",
-    linkedin: "https://www.linkedin.com/in/bfields630"
+    bio: "In Cassie's 15 year career she's straddled the line between public relations and advertising, leading team's to create culture-centric work for a variety of food & beverage brands. She got her start building award-winning experiential campaigns for Caribou Coffee during the height of the chain's national expansion efforts as a publicly traded company, as well as launching social channels and content strategies for Land O' Lakes.\n\nMore recently, Cassie has spearheaded creative activations for Heineken, in addition to establishing a foundational influencer program for the Dutch-based brewer. She's also executed integrated campaigns for CPG brands like Cheez-It, Truvia, Arla Foods & Edwards Desserts.\n\nWhile at American Dairy Queen, Cassie led the company's publicity driving initiatives, generating record earned coverage and consumer engagements for the QSR. Whether in-house or agency-side, Cassie believes that fluid collaboration and transparency drive the strongest results and most fulfilling partnerships.\n\nCassie lives in Minneapolis with her husband, son and two dogs. In her spare time, she's typically wanderlusting (her baby got his first passport stamp at three months old!), exploring her local food and coffee scene or obsessing over interior design.",
+    linkedin: "https://www.linkedin.com/in/cassiedkae/"
   },
   {
     slug: "melanie_castell",
@@ -110,16 +110,6 @@ const PROFILES = [
     linkedin: "https://www.linkedin.com/in/savagecarlos"
   },
   {
-    slug: "neil_lopez",
-    name: "Neil Lopez",
-    location: "msp",
-    title: "Copywriter",
-    image: "neil_lopez.webp",
-    description: "",
-    bio: "For 10+ years Neil has worked across agencies big, small, and fun-sized (Fallon). In that time, he has developed campaigns for such brands as Arby’s, Walmart, AT&T, Listerine, Raising Cane’s, Rolex, NBA, National Geographic, 7-Eleven, and YouTube. Neil is all about telling brand stories with distinct voices that people will actually care about, all while having fun doing it. Along the way, Neil has won shiny awards and influenced bottom-line business growth, sometimes at the same time.\n\nIn Neil’s time with Arby’s he has made other brands desperately jealous. Highlights include: ideating new menu items, revealing the brand voice Ving Rhames to the masses, making Anthony Anderson and Cedric Entertainer make fun of each other at a BBQ, and paying college running backs to just say, “I’m going to Arby’s tonight.”\n\nOutside the office, Neil obsessively follows food and restaurant culture like some people follow fantasy basketball teams (which he is also guilty of), and cooks homemade Filipino and Korean meals that can be delivered to New Yorkers via the app Shef. He’s also a dad to a bossy lil 1 year old, and honestly, that is his real job.",
-    linkedin: "https://www.linkedin.com/in/neillopez"
-  },
-  {
     slug: "steve_torres",
     name: "Steve Torres",
     location: "msp",
@@ -130,44 +120,54 @@ const PROFILES = [
     linkedin: "https://www.linkedin.com/in/steve-torres-33a70b30"
   },
   {
-    slug: "mara_keller",
-    name: "Mara Keller",
+    slug: "neil_lopez",
+    name: "Neil Lopez",
     location: "msp",
-    title: "Group Social Director",
-    image: "mara_keller.webp",
+    title: "Copywriter",
+    image: "neil_lopez.webp",
     description: "",
-    bio: "Mara is a Group Social Director, with over a decade of experience uniting brands and internet culture. Mara has spent most of that decade at Fallon, working across categories including spirits, hospitality, entertainment, and QSR.\n\nHer expertise has created break-through moments for brands like Arby’s, Paramount+, and SHOWTIME. She’s helped Arby’s trend on TikTok and fostered fandoms for series like Shameless, Yellowjackets, and Dexter. Her work has helped drive the success of Arby’s brand activations over the last five years, consistently earning national media coverage and even recognition from Cannes.\n\nOutside of work, Mara is living out her unrealized dreams of being a competitive figure skater, working in her garden, and planning her next hiking trip.",
-    linkedin: "https://www.linkedin.com/in/marakeller/"
+    bio: "For 10+ years Neil has worked across agencies big, small, and fun-sized (Fallon). In that time, he has developed campaigns for such brands as Arby’s, Walmart, AT&T, Listerine, Raising Cane’s, Rolex, NBA, National Geographic, 7-Eleven, and YouTube. Neil is all about telling brand stories with distinct voices that people will actually care about, all while having fun doing it. Along the way, Neil has won shiny awards and influenced bottom-line business growth, sometimes at the same time.\n\nIn Neil’s time with Arby’s he has made other brands desperately jealous. Highlights include: ideating new menu items, revealing the brand voice Ving Rhames to the masses, making Anthony Anderson and Cedric Entertainer make fun of each other at a BBQ, and paying college running backs to just say, “I’m going to Arby’s tonight.”\n\nOutside the office, Neil obsessively follows food and restaurant culture like some people follow fantasy basketball teams (which he is also guilty of), and cooks homemade Filipino and Korean meals that can be delivered to New Yorkers via the app Shef. He’s also a dad to a bossy lil 1 year old, and honestly, that is his real job.",
+    linkedin: "https://www.linkedin.com/in/neillopez"
   },
   {
-    slug: "ashley_kim",
-    name: "Ashley Kim",
+    slug: "adam_chorney",
+    name: "Adam Chorney",
     location: "msp",
-    title: "Senior Program Manager",
-    image: "ashley_kim.webp",
+    title: "Group Strategy Director",
+    image: "adam_chorney.webp",
     description: "",
-    bio: "Ashley is a Senior Program Manager who combines creative problem solving with her knack for process and organization to navigate teams deftly through projects of all sizes and complexities. A challenge seeker and puzzle lover, Ashley chases the thrill of finding and creating order within chaos. As the lead PM on Arby’s since joining Fallon just over a year ago, she has successfully operationalized the team to be more nimble and efficient in order to deliver quality national integrated campaigns and cultural activations at the speed of retail.\n\nAshley’s biggest joy in life—and the main way she explores new cultures and stays connected to her own—is eating good food. Naturally, her favorite brands she’s worked on previously have been the likes of General Mills, King Arthur Baking Company, CLIF Bar and Company, and Sociable Cider Werks, though her experience spans a wide variety of industries including sports, hospitality, agriculture, and finance.\n\nIn her spare time, Ashley loves exploring new restaurants and coffee shops, watching mukbang videos, making latte art, looting treasure chests in video games, and hanging out with her corgi.",
-    linkedin: "https://www.linkedin.com/in/ashleyakim/"
+    bio: "Hi, I’m Adam. I’ve been in Minneapolis working as a strategist at Fallon for the past 20 years. I moved here to learn from the agency’s pioneering connection planning department, where I spent 6 years primarily leading the NBC Universal media account, and eventually rising to become Director of Connection Planning. In recent years I’ve been more of an all-purpose strategist, leading brand strategy for many of our biggest clients, including Cadillac, H&R Block, and Arby’s. I’ve also developed a bit of a specialty in food brands of late, working across the Jack Link’s portfolio of meat snacks brands, the Mizkan portfolio of sauce brands (particularly Bertolli pasta sauce), and Cuisinart’s lineup of kitchen appliances.\n\nMy team’s work has regularly been recognized for creativity and effectiveness at the EFFIES, Cannes Lions, Creative Media Awards, and Jay Chiat Strategy Awards.\n\nPrior to Fallon, I was in New York at The Media Kitchen, where I worked on creative media strategies for brands like Sci Fi Channel and Delta’s Song Airlines.\n\nOn the home front, me, my wife Jessica, and our suddenly teenaged daughter Lucinda are living the Minneapolis transplant’s dream with an old house on a creek in the heart of the city.",
+    linkedin: "https://www.linkedin.com/in/adamchorney"
   },
   {
-    slug: "joe_johnson",
-    name: "Joe Johnson",
+    slug: "julia_frayne",
+    name: "Julia Frayne",
     location: "msp",
-    title: "Group Creative Director",
-    image: "joe_johnson.webp",
+    title: "Account Director",
+    image: "julia_frayne.webp",
     description: "",
-    bio: "Just like it says in the header above this sentence, I’m a Group Creative Director at Fallon.\n\nIn the last 20 years, I’ve been a visual designer, art director, and creative director, working on brands like Nike, Verizon, Intel, Walmart, and Mastercard before finding my way to Fallon 11 years ago. My years at Fallon have been spent crafting, launching, and leading campaigns for consumer packaged goods (International Delight, Silk, Woodford Reserve, Bertolli), financial products (H&R Block, Rocket Mortgage, TaxAct), and retail brands (Arby’s, Massage Envy).\n\nI’ve steered the creative ship for Arby’s over the last 5 years. My work for Arby’s has been recognized via Cannes Lions, D&AD, Clios, AICP, Andy, ADDY, EFFIES, as well as a ton of regular people who are not creative advertising awards judges.\n\nOutside of work, I like to grill/smoke BBQ, maintain my DuoLingo streak, read old comic books, collect tattoos, and spend time with my fam— wife, teen daughter, and cockapoo.",
-    linkedin: "https://www.linkedin.com/in/hirejoejohnson/"
+    bio: "Julia is an Account Director who has been at Fallon for almost 8 years. She got her start in advertising working on several CPG brands from the Danone portfolio including Silk and International Delight, as well as Massage Envy. From there she transitioned into the world of QSR working on Arby’s ample experience leading National Campaigns, LTO’s and award winning activations. She also helped bring to life the world’s first ever shoppable movie for Walmart’s holiday campaign, paving the way for how companies tackle the future of social commerce.\n\nShe thrives on working hip to hip with strategy, production and creative teams to bring smart, breakthrough work to life in new and interesting ways. Julia leads with positivity and builds strong, trusting relationships with all of her clients and agency partners.\n\nWhen not working, Julia loves to travel the world, 43 countries and counting. If you have a trip planned, she has a spreadsheet of recommendations to share with you. When not traveling, she calls Minneapolis home with her three chickens.",
+    linkedin: "https://www.linkedin.com/in/julia-frayne-8aba7668/"
   },
   {
-    slug: "cassie_dkae_lendway",
-    name: "Cassie D’kae Lendway",
+    slug: "brandon_fields",
+    name: "Brandon Fields",
     location: "msp",
-    title: "Senior Account Director",
-    image: "cassie_dkae_lendway.webp",
+    title: "Account Supervisor",
+    image: "brandon_fields.webp",
     description: "",
-    bio: "In Cassie's 15 year career she's straddled the line between public relations and advertising, leading team's to create culture-centric work for a variety of food & beverage brands. She got her start building award-winning experiential campaigns for Caribou Coffee during the height of the chain's national expansion efforts as a publicly traded company, as well as launching social channels and content strategies for Land O' Lakes.\n\nMore recently, Cassie has spearheaded creative activations for Heineken, in addition to establishing a foundational influencer program for the Dutch-based brewer. She's also executed integrated campaigns for CPG brands like Cheez-It, Truvia, Arla Foods & Edwards Desserts.\n\nWhile at American Dairy Queen, Cassie led the company's publicity driving initiatives, generating record earned coverage and consumer engagements for the QSR. Whether in-house or agency-side, Cassie believes that fluid collaboration and transparency drive the strongest results and most fulfilling partnerships.\n\nCassie lives in Minneapolis with her husband, son and two dogs. In her spare time, she's typically wanderlusting (her baby got his first passport stamp at three months old!), exploring her local food and coffee scene or obsessing over interior design.",
-    linkedin: "https://www.linkedin.com/in/cassiedkae/"
+    bio: "Brandon Fields is an Account Supervisor and a native of New York City, having been with Fallon for just over a year. He is passionate about fostering strong relationships and creating collaborative environments to produce the best work possible. No stranger to Publicis Groupe, Brandon began his career at Sapient Razorfish, where he worked on CPG and tech brands, including Church and Dwight and Samsung.\n\nPrior to joining Fallon, Brandon spent three years at Wieden & Kennedy, managing vehicle reveals and launches for iconic nameplates such as Mustang, F-150, Bronco, and their SUV lineup.\n\nAt Fallon, Brandon hit the ground running. He has led national campaigns, limited-time offers, and activations for the Arby’s brand, enjoying every moment. His most recent project was the Arby’s AC Barbecue campaign, where he collaborated with well-known comedians and actors Anthony Anderson and Cedric the Entertainer. This campaign featured their signature BBQ sauces paired with Arby’s 1/4lb pulled pork and 1/4lb brisket sandwiches. Brandon thrives on collaboration and works closely with strategy, creative, and production teams to make the impossible possible.\n\nBrandon enjoys watching a good show in his free time, traveling solo, and exploring new culinary experiences.",
+    linkedin: "https://www.linkedin.com/in/bfields630"
+  },
+  {
+    slug: "erin_simle",
+    name: "Erin Simle",
+    location: "msp",
+    title: "Head of Production",
+    image: "erin_simle.webp",
+    description: "",
+    bio: "As Head of Production at Fallon, Erin Simle leads her production team with a respect for exceptional creativity and fierce efficiency. With over a decade of QSR and food-related work on her reel, she works to find ways to achieve the best-in-class craft and creativity matched with speed and efficiency for an evolving media landscape.\n\nAs a part of Publicis Productions and fueled by Production Intelligence, Erin and the production team are able to unlock value across all content needs. From content production origination through adaptation, localization and versioning. Bridging needs from creative craft, agile content fit for platform and personalized content at scale.",
+    linkedin: "https://www.linkedin.com/in/erinsimle/"
   },
 ]
 
@@ -327,14 +327,14 @@ function HomeClientContent() {
                 Your Next Team
               </button>
             </li>
-            <li>
+            {/* <li>
               <button 
                 onClick={() => scrollToSection('more')}
                 className="cursor-pointer uppercase"
               >
                 More than QSR
               </button>
-            </li>
+            </li> */}
           </ul>
           <div className="flex gap-3">
             <button 
@@ -369,7 +369,7 @@ function HomeClientContent() {
         </section>
 
         <section id="reel">
-          <div className="aspect-video relative"><iframe className="absolute top-0 left-0 w-full h-full" src="https://player.vimeo.com/video/1081861477?h=d7f676fc2d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Fallon Reel 2025"></iframe></div>
+          <div className="aspect-video relative"><iframe className="absolute top-0 left-0 w-full h-full" src="https://player.vimeo.com/video/1096668912?h=d7f676fc2d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Fallon Reel 2025"></iframe></div>
         </section>
 
         <section id="story">
@@ -542,17 +542,15 @@ function HomeClientContent() {
               <div className="">
                 <Image src='plus.svg' width={30} height={30} alt="plus sign" />
               </div>
-              <div className="">
+              {/* <div className="">
                 <button onClick={() => scrollToSection('more')} className="cursor-pointer">
                   <Image src="down_arrow_pink.svg" alt="Pink down arrow" width={40} height={40} />
                 </button>
-              </div>
+              </div> */}
               <div className="">
                 <Image src='plus.svg' width={30} height={30} alt="plus sign" />
               </div>
             </div>
-
-            
           </div>
         </section>
         {/*<section id="more">
@@ -570,29 +568,12 @@ function HomeClientContent() {
           </div>
         </section>*/}
 
-        <section id="more">
+        {/* <section id="more">
           <div className="min-h-screen bg-[url('/work-bg@2x.png')] bg-cover bg-center relative flex items-center">
             <div className="flex flex-col w-90 absolute top-[20%] left-10">
               <h2 className="text-7xl font-family-anton uppercase tracking-wide mb-8 text-black leading-16">But we do a lot more than QSR</h2>
               <p className="font-family-garamond font-bold pb-3 text-3xl leading-7 text-black">Because a well-rounded agency does better work.</p>
             </div>
-
-            {/* <div className="absolute w-[3%] left-[5%] top-[6%] -translate-x-1/2 -translate-y-1/2">
-              <img src="plus_black.svg" alt="Black plus sign" className="w-full" />
-            </div> */}
-
-            {/* <div className="absolute w-[3%] left-[95%] top-[6%] -translate-x-1/2 -translate-y-1/2">
-              <img src="plus_black.svg" alt="Black plus sign" className="w-full" />
-            </div> */}
-
-            {/* <div className="absolute w-[3%] left-[95%] top-[94%] -translate-x-1/2 -translate-y-1/2">
-              <img src="plus_black.svg" alt="Black plus sign" className="w-full" />
-            </div> */}
-
-            {/* <div className="absolute w-[3%] left-[5%] top-[94%] -translate-x-1/2 -translate-y-1/2">
-              <img src="plus_black.svg" alt="Black plus sign" className="w-full" />
-            </div> */}
-
 
             <div className="absolute w-[28%] left-1/2 top-[52%] -translate-x-1/2 -translate-y-1/2">
               <Image src="fallon_f.svg" alt="Fallon F" width={1200} height={1200} className="w-full" />
@@ -621,14 +602,8 @@ function HomeClientContent() {
                 <Image src="/cheezit.png" alt="Cheez-It" width={300} height={300} className="w-full" />
               </button>
             </div>
-
-            {/* <div className="absolute w-[40px] left-[50%] bottom-[15px] -translate-x-1/2 -translate-y-1/2">
-              <button onClick={() => scrollToSection('team')} className="cursor-pointer">
-                <Image src="/down_arrow_black.svg" alt="Black down arrow" width={40} height={40} className="w-full" />
-              </button>
-            </div> */}
           </div>
-        </section>
+        </section> */}
       </main>
       <footer className="bg-[url(/bg_footer-80.jpg)] bg-cover bg-center pt-10 pb-2">
         <div className="w-full">
