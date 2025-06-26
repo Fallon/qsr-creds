@@ -159,16 +159,16 @@ const PROFILES = [
     bio: "Brandon Fields is an Account Supervisor and a native of New York City, having been with Fallon for just over a year. He is passionate about fostering strong relationships and creating collaborative environments to produce the best work possible. No stranger to Publicis Groupe, Brandon began his career at Sapient Razorfish, where he worked on CPG and tech brands, including Church and Dwight and Samsung.\n\nPrior to joining Fallon, Brandon spent three years at Wieden & Kennedy, managing vehicle reveals and launches for iconic nameplates such as Mustang, F-150, Bronco, and their SUV lineup.\n\nAt Fallon, Brandon hit the ground running. He has led national campaigns, limited-time offers, and activations for the Arby’s brand, enjoying every moment. His most recent project was the Arby’s AC Barbecue campaign, where he collaborated with well-known comedians and actors Anthony Anderson and Cedric the Entertainer. This campaign featured their signature BBQ sauces paired with Arby’s 1/4lb pulled pork and 1/4lb brisket sandwiches. Brandon thrives on collaboration and works closely with strategy, creative, and production teams to make the impossible possible.\n\nBrandon enjoys watching a good show in his free time, traveling solo, and exploring new culinary experiences.",
     linkedin: "https://www.linkedin.com/in/bfields630"
   },
-  {
-    slug: "erin_simle",
-    name: "Erin Simle",
-    location: "msp",
-    title: "Head of Production",
-    image: "erin_simle.webp",
-    description: "",
-    bio: "As Head of Production at Fallon, Erin Simle leads her production team with a respect for exceptional creativity and fierce efficiency. With over a decade of QSR and food-related work on her reel, she works to find ways to achieve the best-in-class craft and creativity matched with speed and efficiency for an evolving media landscape.\n\nAs a part of Publicis Productions and fueled by Production Intelligence, Erin and the production team are able to unlock value across all content needs. From content production origination through adaptation, localization and versioning. Bridging needs from creative craft, agile content fit for platform and personalized content at scale.",
-    linkedin: "https://www.linkedin.com/in/erinsimle/"
-  },
+  // {
+  //   slug: "erin_simle",
+  //   name: "Erin Simle",
+  //   location: "msp",
+  //   title: "Head of Production",
+  //   image: "erin_simle.webp",
+  //   description: "",
+  //   bio: "As Head of Production at Fallon, Erin Simle leads her production team with a respect for exceptional creativity and fierce efficiency. With over a decade of QSR and food-related work on her reel, she works to find ways to achieve the best-in-class craft and creativity matched with speed and efficiency for an evolving media landscape.\n\nAs a part of Publicis Productions and fueled by Production Intelligence, Erin and the production team are able to unlock value across all content needs. From content production origination through adaptation, localization and versioning. Bridging needs from creative craft, agile content fit for platform and personalized content at scale.",
+  //   linkedin: "https://www.linkedin.com/in/erinsimle/"
+  // },
 ]
 
 const VIDEOS = [
