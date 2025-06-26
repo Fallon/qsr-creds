@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fallon QSR",
     description: "Your next team",
-    url: "https://qsr.fallon.com",
+    url: "https://www.fallonqsr.com",
     siteName: "Fallon QSR",
     images: [
       {
-        url: `${process.env.VERCEL_URL ? "https" : "http"}://${process.env.VERCEL_URL || "localhost:3000"}/share-image.webp`,
+        url: "https://www.fallonqsr.com/share-image.webp",
         width: 1200,
         height: 630,
         alt: "Fallon QSR",
