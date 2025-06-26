@@ -18,7 +18,53 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+const LINKS = [
+  { section: "story", label: "The Arby’s Story" },
+  { section: "team", label: "Your Next Team" },
+  // { section: "more", label: "More than QSR" },
+];
+
 const PROFILES = [
+  // {
+  //   slug: "nikki_baker",
+  //   name: "Nikki Baker",
+  //   location: "msp",
+  //   title: "CEO",
+  //   image: "nikki_baker.webp",
+  //   description: "",
+  //   bio: "Baker took the role after a decades-long career in advertising as a creative. Nikki brings her creative acumen to the role, including her recent leadership over the Walmart partnership, leading a five-agency team creating innovative campaigns such as the award-winning “RomCommerce” 23-episodic series and the internet-breaking Mean Girls campaign, among hundreds of other campaigns together with the brand over the past few years. As CEO, Baker’s leadership builds upon one of Fallon’s founding beliefs by delivering work that outsmarts vs. outspends the competition.",
+  //   linkedin: "https://www.linkedin.com/in/nikkibakercreative"
+  // },
+  // {
+  //   slug: "leslie_shaffer",
+  //   name: "Leslie Shaffer",
+  //   location: "msp",
+  //   title: "CCO",
+  //   image: "leslie_shaffer.webp",
+  //   description: "",
+  //   bio: "As Chief Creative Officer of Fallon, Leslie is proudly in charge of all the weirdos. She’s also proud of Fallon’s focus on brand voice and that no two are the same. With a deliberate “no house style,” Fallon creates work for brands ranging from Walmart to Mattress Firm to Cuisinart to Disney. Leslie works with brands to unlock big creative ideas that connect with people and change their business. Her work has been recognized at Cannes, Clios, One Show, and Effie’s, but her favorite recognition comes in the form of texts from friends that read, “Did you do this?!?”",
+  //   linkedin: "https://www.linkedin.com/in/lesliershaffer"
+  // },
+  // {
+  //   slug: "james_fox",
+  //   name: "James Fox",
+  //   location: "msp",
+  //   title: "Chief Strategy Officer",
+  //   image: "james_fox.webp",
+  //   description: "",
+  //   bio: "James is an award-winning international strategist with experience across advertising, design, brand, media, and finance. He’s held Global CSO roles for major ad networks and served as the first Global Head of Brand Strategy for Goldman Sachs. His experience includes leading strategy at UM, the world's largest media agency, and serving as CEO of Red Peak, which he sold in 2016.\n\nJames has developed successful brand platforms for global clients, earning multiple accolades for effectiveness and innovation including pioneering AI and data integration. With degrees from LSE and University of Leeds, he’s a respected thought leader, published author, and international speaker shaping the future of marketing strategy.",
+  //   linkedin: "https://www.linkedin.com/in/james-fox-0783411"
+  // },
+  // {
+  //   slug: "lauren_pulwer",
+  //   name: "Lauren Pulwer",
+  //   location: "msp",
+  //   title: "Managing Director",
+  //   image: "lauren_pulwer.webp",
+  //   description: "",
+  //   bio: "As Managing Director, Lauren Pulwer is leading the day-to-day operations. Prior to joining Fallon in March 2025, Lauren spent the last 13+ years within Publicis Groupe, leading teams across L’Oréal and, more recently, Walmart. On the Walmart business, Lauren was the Managing Director, helping to lead the business across a five-agency creative team that consistently grew year over year while increasing the output of dozens of successful campaigns, spanning a Gilmore Girls reunion, Mean Girls reunion, a first-of-its-kind 23 episode RomCom series, and so much more. Prior to Publicis, Lauren spent time at Arnold New York, McCann, and Ogilvy working across brands like Avon, Verizon, Intel, Kohler, and more.",
+  //   linkedin: "https://www.linkedin.com/in/james-fox-0783411"
+  // },
   {
     slug: "chris_campbell",
     name: "Chris Campbell",
@@ -239,8 +285,6 @@ function HomeClientContent() {
   const [ isProfileDialogOpen, setIsProfileDialogOpen ] = useState(false);
 
   useEffect(() => {
-    
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -311,30 +355,16 @@ function HomeClientContent() {
             <Image src={navDark ? 'plus_black.svg' : 'plus.svg'} width={30} height={30} alt="plus sign" />
           </div>
           <ul className="flex gap-4 uppercase">
-            <li>
-              <button 
-                onClick={() => scrollToSection('story')}
-                className="cursor-pointer uppercase"
-              >
-                The Arbys Story
-              </button>
-            </li>
-            <li>
-              <button 
-                onClick={() => scrollToSection('team')}
-                className="cursor-pointer uppercase"
-              >
-                Your Next Team
-              </button>
-            </li>
-            {/* <li>
-              <button 
-                onClick={() => scrollToSection('more')}
-                className="cursor-pointer uppercase"
-              >
-                More than QSR
-              </button>
-            </li> */}
+            {LINKS.map(link => (
+              <li key={link.section}>
+                <button 
+                  onClick={() => scrollToSection(link.section)}
+                  className="cursor-pointer uppercase"
+                >
+                  {link.label}
+                </button>
+              </li>
+            ))}
           </ul>
           <div className="flex gap-3">
             <button 
@@ -471,7 +501,6 @@ function HomeClientContent() {
           </div>
         </section>
 
-
         <section id="team">
           <div className="relative w-full aspect-[4/3] bg-[#f03010] flex items-center">
             {/* <div className="absolute w-[16%] left-[5%] top-[5%]">
@@ -553,6 +582,7 @@ function HomeClientContent() {
             </div>
           </div>
         </section>
+
         {/*<section id="more">
           <div className="min-h-screen relative bg-[#0e191f] flex flex-col items-center justify-center p-12">
             <div className="top-16 left-0 flex items-center justify-around w-full -mb-4 z-20">
@@ -604,6 +634,7 @@ function HomeClientContent() {
             </div>
           </div>
         </section> */}
+
       </main>
       <footer className="bg-[url(/bg_footer-80.jpg)] bg-cover bg-center pt-10 pb-2">
         <div className="w-full">
