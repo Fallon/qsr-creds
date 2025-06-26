@@ -619,7 +619,7 @@ function HomeClientContent() {
 
       {/* Video Dialog */}
       <Dialog open={isVideoDialogOpen} onOpenChange={setIsVideoDialogOpen}>
-        <DialogContent className="max-w-none! w-[90vw] rounded-none p-0 z-100 border-0">
+        <DialogContent className="max-w-none! w-[90%] rounded-none p-0 z-100 border-0">
           <DialogHeader className="sr-only">
             <DialogTitle>{selectedVideo?.title}</DialogTitle>
           </DialogHeader>
@@ -641,7 +641,7 @@ function HomeClientContent() {
 
       {/* Profile Dialog */}
       <Dialog open={isProfileDialogOpen} onOpenChange={setIsProfileDialogOpen}>
-        <DialogContent className="profile-dialog max-w-[768px]! border-0">
+        <DialogContent className="profile-dialog max-w-[80%]! border-0">
           <DialogHeader className="sr-only">
             <DialogTitle className="text-2xl font-family-anton uppercase">
               {selectedProfile?.name}
