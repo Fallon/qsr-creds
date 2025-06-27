@@ -25,46 +25,46 @@ const LINKS = [
 ];
 
 const PROFILES = [
-  // {
-  //   slug: "nikki_baker",
-  //   name: "Nikki Baker",
-  //   location: "msp",
-  //   title: "CEO",
-  //   image: "nikki_baker.webp",
-  //   description: "",
-  //   bio: "Baker took the role after a decades-long career in advertising as a creative. Nikki brings her creative acumen to the role, including her recent leadership over the Walmart partnership, leading a five-agency team creating innovative campaigns such as the award-winning “RomCommerce” 23-episodic series and the internet-breaking Mean Girls campaign, among hundreds of other campaigns together with the brand over the past few years. As CEO, Baker’s leadership builds upon one of Fallon’s founding beliefs by delivering work that outsmarts vs. outspends the competition.",
-  //   linkedin: "https://www.linkedin.com/in/nikkibakercreative"
-  // },
-  // {
-  //   slug: "leslie_shaffer",
-  //   name: "Leslie Shaffer",
-  //   location: "msp",
-  //   title: "CCO",
-  //   image: "leslie_shaffer.webp",
-  //   description: "",
-  //   bio: "As Chief Creative Officer of Fallon, Leslie is proudly in charge of all the weirdos. She’s also proud of Fallon’s focus on brand voice and that no two are the same. With a deliberate “no house style,” Fallon creates work for brands ranging from Walmart to Mattress Firm to Cuisinart to Disney. Leslie works with brands to unlock big creative ideas that connect with people and change their business. Her work has been recognized at Cannes, Clios, One Show, and Effie’s, but her favorite recognition comes in the form of texts from friends that read, “Did you do this?!?”",
-  //   linkedin: "https://www.linkedin.com/in/lesliershaffer"
-  // },
-  // {
-  //   slug: "james_fox",
-  //   name: "James Fox",
-  //   location: "msp",
-  //   title: "Chief Strategy Officer",
-  //   image: "james_fox.webp",
-  //   description: "",
-  //   bio: "James is an award-winning international strategist with experience across advertising, design, brand, media, and finance. He’s held Global CSO roles for major ad networks and served as the first Global Head of Brand Strategy for Goldman Sachs. His experience includes leading strategy at UM, the world's largest media agency, and serving as CEO of Red Peak, which he sold in 2016.\n\nJames has developed successful brand platforms for global clients, earning multiple accolades for effectiveness and innovation including pioneering AI and data integration. With degrees from LSE and University of Leeds, he’s a respected thought leader, published author, and international speaker shaping the future of marketing strategy.",
-  //   linkedin: "https://www.linkedin.com/in/james-fox-0783411"
-  // },
-  // {
-  //   slug: "lauren_pulwer",
-  //   name: "Lauren Pulwer",
-  //   location: "msp",
-  //   title: "Managing Director",
-  //   image: "lauren_pulwer.webp",
-  //   description: "",
-  //   bio: "As Managing Director, Lauren Pulwer is leading the day-to-day operations. Prior to joining Fallon in March 2025, Lauren spent the last 13+ years within Publicis Groupe, leading teams across L’Oréal and, more recently, Walmart. On the Walmart business, Lauren was the Managing Director, helping to lead the business across a five-agency creative team that consistently grew year over year while increasing the output of dozens of successful campaigns, spanning a Gilmore Girls reunion, Mean Girls reunion, a first-of-its-kind 23 episode RomCom series, and so much more. Prior to Publicis, Lauren spent time at Arnold New York, McCann, and Ogilvy working across brands like Avon, Verizon, Intel, Kohler, and more.",
-  //   linkedin: "https://www.linkedin.com/in/james-fox-0783411"
-  // },
+  {
+    slug: "nikki_baker",
+    name: "Nikki Baker",
+    location: "msp",
+    title: "CEO",
+    image: "nikki_baker.webp",
+    description: "",
+    bio: "Baker took the role after a decades-long career in advertising as a creative. Nikki brings her creative acumen to the role, including her recent leadership over the Walmart partnership, leading a five-agency team creating innovative campaigns such as the award-winning “RomCommerce” 23-episodic series and the internet-breaking Mean Girls campaign, among hundreds of other campaigns together with the brand over the past few years. As CEO, Baker’s leadership builds upon one of Fallon’s founding beliefs by delivering work that outsmarts vs. outspends the competition.",
+    linkedin: "https://www.linkedin.com/in/nikkibakercreative"
+  },
+  {
+    slug: "leslie_shaffer",
+    name: "Leslie Shaffer",
+    location: "msp",
+    title: "CCO",
+    image: "leslie_shaffer.webp",
+    description: "",
+    bio: "As Chief Creative Officer of Fallon, Leslie is proudly in charge of all the weirdos. She’s also proud of Fallon’s focus on brand voice and that no two are the same. With a deliberate “no house style,” Fallon creates work for brands ranging from Walmart to Mattress Firm to Cuisinart to Disney. Leslie works with brands to unlock big creative ideas that connect with people and change their business. Her work has been recognized at Cannes, Clios, One Show, and Effie’s, but her favorite recognition comes in the form of texts from friends that read, “Did you do this?!?”",
+    linkedin: "https://www.linkedin.com/in/lesliershaffer"
+  },
+  {
+    slug: "james_fox",
+    name: "James Fox",
+    location: "msp",
+    title: "Chief Strategy Officer",
+    image: "james_fox.webp",
+    description: "",
+    bio: "James is an award-winning international strategist with experience across advertising, design, brand, media, and finance. He’s held Global CSO roles for major ad networks and served as the first Global Head of Brand Strategy for Goldman Sachs. His experience includes leading strategy at UM, the world's largest media agency, and serving as CEO of Red Peak, which he sold in 2016.\n\nJames has developed successful brand platforms for global clients, earning multiple accolades for effectiveness and innovation including pioneering AI and data integration. With degrees from LSE and University of Leeds, he’s a respected thought leader, published author, and international speaker shaping the future of marketing strategy.",
+    linkedin: "https://www.linkedin.com/in/james-fox-0783411"
+  },
+  {
+    slug: "lauren_pulwer",
+    name: "Lauren Pulwer",
+    location: "msp",
+    title: "Managing Director",
+    image: "lauren_pulwer.webp",
+    description: "",
+    bio: "As Managing Director, Lauren Pulwer is leading the day-to-day operations. Prior to joining Fallon in March 2025, Lauren spent the last 13+ years within Publicis Groupe, leading teams across L’Oréal and, more recently, Walmart. On the Walmart business, Lauren was the Managing Director, helping to lead the business across a five-agency creative team that consistently grew year over year while increasing the output of dozens of successful campaigns, spanning a Gilmore Girls reunion, Mean Girls reunion, a first-of-its-kind 23 episode RomCom series, and so much more. Prior to Publicis, Lauren spent time at Arnold New York, McCann, and Ogilvy working across brands like Avon, Verizon, Intel, Kohler, and more.",
+    linkedin: "https://www.linkedin.com/in/james-fox-0783411"
+  },
   {
     slug: "chris_campbell",
     name: "Chris Campbell",
@@ -399,7 +399,9 @@ function HomeClientContent() {
         </section>
 
         <section id="reel">
-          <div className="aspect-video relative"><iframe className="absolute top-0 left-0 w-full h-full" src="https://player.vimeo.com/video/1096668912?h=d7f676fc2d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Fallon Reel 2025"></iframe></div>
+          <div className="aspect-video relative">
+            <iframe className="absolute top-0 left-0 w-full h-full border-0" src="https://player.vimeo.com/video/1096930672?h=d7f676fc2d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Fallon Reel 2025"></iframe>
+          </div>
         </section>
 
         <section id="story">
