@@ -21,7 +21,7 @@ import 'swiper/css/pagination';
 const LINKS = [
   { section: "story", label: "The Arby’s Story" },
   { section: "team", label: "Your Next Team" },
-  // { section: "more", label: "More than QSR" },
+  { section: "more", label: "More than QSR" },
 ];
 
 const PROFILES = [
@@ -270,7 +270,7 @@ const SECTIONS = [
   { id: 'reel', dark: true },
   { id: 'story', dark: false },
   { id: 'team', dark: false },
-  { id: 'more', dark: true }
+  { id: 'more', dark: false }
 ];
 
 function HomeClientContent() {
@@ -589,20 +589,48 @@ function HomeClientContent() {
           </div>
         </section>
 
-        {/*<section id="more">
-          <div className="min-h-screen relative bg-[#0e191f] flex flex-col items-center justify-center p-12">
-            <div className="top-16 left-0 flex items-center justify-around w-full -mb-4 z-20">
-              <div className="w-1/2 flex justify-center">
-                <div><h2 className="text-7xl text-left font-family-anton uppercase tracking-wide leading-18 text-[#faf0e0]">But we do a lot<br />more than QSR</h2></div>
+        <section id="more">
+          <div className="min-h-screen relative bg-[#0e191f]">
+            <div className="flex items-center justify-between w-full p-8 pt-22">
+              <div className="relative w-3/5 flex justify-left">
+                <h2 className="text-8xl text-left font-family-anton uppercase tracking-wide leading-22 text-[#faf0e0]">But we do a lot more than QSR</h2>
+                <div className="w-[140px] absolute -bottom-22 left-16">
+                  <Image src="/pink_arrow.svg" alt="Pink arrow" width={1200} height={1200} className="w-full" />
+                </div>
               </div>
-              <div className="w-1/2 text-center">
-                <p className="font-family-garamond text-3xl text-[#faf0e0]">Because a well-rounded agency does better work.</p>
+              <div className="relative w-1/3 text-center">
+                <p className="font-family-garamond text-2xl text-[#faf0e0] w-[160px] text-center pt-22">Because a well-rounded agency does better work.</p>
+                <div className="w-[150px] absolute top-0 right-20">
+                  <Image src="/pink_star.svg" alt="Pink Star" width={1200} height={1200} className="w-full" />
+                </div>
               </div>
             </div>
 
-            <div className="w-[90%] aspect-video relative z-10"><iframe className="absolute top-0 left-0 w-full h-full" src="https://player.vimeo.com/video/1081861477?h=d7f676fc2d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Fallon Reel 2025"></iframe></div>
+            <div className="flex w-full h-full">
+              <div className="flex flex-col w-[39%]">
+                <button className="cursor-pointer" onClick={() => openVideo('1096610753')}>
+                  <Image src="/more_walmart.png" alt="Walmart" width={1024} height={768} className="w-full" />
+                </button>
+                <button className="cursor-pointer" onClick={() => openVideo('1096610753')}>
+                  <Image src="/more_showtime.png" alt="Showtime" width={1024} height={768} className="w-full" />
+                </button>
+              </div>
+              <div className="flex w-[22%]">
+                <button className="w-full h-full cursor-pointer" onClick={() => openVideo('1096610753')}>
+                  <Image src="/more_pawpatrol.png" alt="Paw Patrol" width={768} height={1024} className="w-full" />
+                </button>
+              </div>
+              <div className="flex flex-col w-[39%]">
+                <button className="cursor-pointer" onClick={() => openVideo('1096610753')}>
+                  <Image src="/more_matressfirm.png" alt="Matress Firm" width={1024} height={768} className="w-full" />
+                </button>
+                <button className="cursor-pointer" onClick={() => openVideo('1096610753')}>
+                  <Image src="/more_taxact.png" alt="Tax Act" width={1024} height={768} className="w-full" />
+                </button>
+              </div>
+            </div>
           </div>
-        </section>*/}
+        </section>
 
         {/* <section id="more">
           <div className="min-h-screen bg-[url('/work-bg@2x.png')] bg-cover bg-center relative flex items-center">
