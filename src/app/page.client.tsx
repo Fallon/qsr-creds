@@ -416,7 +416,7 @@ function HomeClientContent() {
               <span className="flex gap-2">Hi there! <Image src={'asterisk.svg'} width={54} height={54} alt="asterisk" /></span>{name ? `${name}!` : ''}
             </h2>
 
-            <p className="font-family-garamond pb-3 leading-5">Not sure if you heard, but after more than a decade, Fallon and Arby’s are parting ways. We couldn’t be prouder of the work we’ve done and how we changed their business. Now we’re looking to change someone else. So take a look at what we do and if you’re looking to shake up QSR, give us a call.</p>
+            <p className="font-family-garamond pb-3 leading-5">Not sure if you heard, but after more than a decade, Fallon and Arby’s are parting ways. We couldn’t be prouder of the work we’ve done and how we changed their business. Now we’re looking to change someone else’s. So take a look at what we do and if you’re looking to shake up QSR, give us a call.</p>
 
             <p className="font-family-garamond font-bold pb-3 leading-5">- Nikki Baker, Fallon CEO</p>
           </div>
@@ -429,7 +429,7 @@ function HomeClientContent() {
 
         <section id="reel">
           <div className="aspect-video relative">
-            <iframe className="absolute top-0 left-0 w-full h-full border-0" src="https://player.vimeo.com/video/1096930672?h=d7f676fc2d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Fallon Reel 2025"></iframe>
+            <iframe className="absolute top-0 left-0 w-full h-full border-0" src="https://player.vimeo.com/video/1097696716?h=d7f676fc2d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Fallon Reel 2025"></iframe>
           </div>
         </section>
 
