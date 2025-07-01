@@ -262,7 +262,32 @@ const VIDEOS = [
     id: "1096610633",
     vimeoId: "1096610633",
     title: "Arby's Pusha T Diss"
-  }
+  },
+  {
+    id: "1097718141",
+    vimeoId: "1097718141",
+    title: "Walmart"
+  },
+  {
+    id: "1097718090",
+    vimeoId: "1097718090",
+    title: "Showtime"
+  },
+  {
+    id: "1097718050",
+    vimeoId: "1097718050",
+    title: "Paw Patrol"
+  },
+  {
+    id: "1097718202",
+    vimeoId: "1097718202",
+    title: "Mattress Firm"
+  },
+  {
+    id: "1097718188",
+    vimeoId: "1097718188",
+    title: "Tax Act"
+  },
 ];
 
 const SECTIONS = [
@@ -608,23 +633,23 @@ function HomeClientContent() {
 
             <div className="flex w-full h-full">
               <div className="flex flex-col w-[39%]">
-                <button className="cursor-pointer" onClick={() => openVideo('1096610753')}>
+                <button className="cursor-pointer" onClick={() => openVideo('1097718141')}>
                   <Image src="/more_walmart.png" alt="Walmart" width={1024} height={768} className="w-full" />
                 </button>
-                <button className="cursor-pointer" onClick={() => openVideo('1096610753')}>
+                <button className="cursor-pointer" onClick={() => openVideo('1097718090')}>
                   <Image src="/more_showtime.png" alt="Showtime" width={1024} height={768} className="w-full" />
                 </button>
               </div>
               <div className="flex w-[22%]">
-                <button className="w-full h-full cursor-pointer" onClick={() => openVideo('1096610753')}>
+                <button className="w-full h-full cursor-pointer" onClick={() => openVideo('1097718050')}>
                   <Image src="/more_pawpatrol.png" alt="Paw Patrol" width={768} height={1024} className="w-full" />
                 </button>
               </div>
               <div className="flex flex-col w-[39%]">
-                <button className="cursor-pointer" onClick={() => openVideo('1096610753')}>
+                <button className="cursor-pointer" onClick={() => openVideo('1097718202')}>
                   <Image src="/more_matressfirm.png" alt="Matress Firm" width={1024} height={768} className="w-full" />
                 </button>
-                <button className="cursor-pointer" onClick={() => openVideo('1096610753')}>
+                <button className="cursor-pointer" onClick={() => openVideo('1097718188')}>
                   <Image src="/more_taxact.png" alt="Tax Act" width={1024} height={768} className="w-full" />
                 </button>
               </div>
