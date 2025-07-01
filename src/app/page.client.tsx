@@ -2,7 +2,7 @@
 
 import { useState, useEffect, Suspense } from "react";
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
+import { redirect, useSearchParams } from "next/navigation";
 import {
   Dialog,
   DialogContent,
@@ -276,6 +276,10 @@ const SECTIONS = [
 function HomeClientContent() {
   const searchParams = useSearchParams();
   const name = searchParams.get('name');
+
+  if (name === "Pizza Hut")  {
+    redirect('/pizzahut');
+  }
 
   const [ navDark, setNavDark ] = useState<boolean>(false);
 
