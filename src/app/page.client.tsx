@@ -30,7 +30,7 @@ const PROFILES = [
     name: "Nikki Baker",
     location: "msp",
     title: "CEO",
-    image: "nikki_baker.webp",
+    image: "nikki_baker.jpg",
     description: "",
     bio: "Baker took the role after a decades-long career in advertising as a creative. Nikki brings her creative acumen to the role, including her recent leadership over the Walmart partnership, leading a five-agency team creating innovative campaigns such as the award-winning “RomCommerce” 23-episodic series and the internet-breaking Mean Girls campaign, among hundreds of other campaigns together with the brand over the past few years. As CEO, Baker’s leadership builds upon one of Fallon’s founding beliefs by delivering work that outsmarts vs. outspends the competition.",
     linkedin: "https://www.linkedin.com/in/nikkibakercreative"
@@ -40,7 +40,7 @@ const PROFILES = [
     name: "Leslie Shaffer",
     location: "msp",
     title: "CCO",
-    image: "leslie_shaffer.webp",
+    image: "leslie_shaffer.jpg",
     description: "",
     bio: "As Chief Creative Officer of Fallon, Leslie is proudly in charge of all the weirdos. She’s also proud of Fallon’s focus on brand voice and that no two are the same. With a deliberate “no house style,” Fallon creates work for brands ranging from Walmart to Mattress Firm to Cuisinart to Disney. Leslie works with brands to unlock big creative ideas that connect with people and change their business. Her work has been recognized at Cannes, Clios, One Show, and Effie’s, but her favorite recognition comes in the form of texts from friends that read, “Did you do this?!?”",
     linkedin: "https://www.linkedin.com/in/lesliershaffer"
@@ -50,7 +50,7 @@ const PROFILES = [
     name: "James Fox",
     location: "msp",
     title: "Chief Strategy Officer",
-    image: "james_fox.webp",
+    image: "james_fox.jpg",
     description: "",
     bio: "James is an award-winning international strategist with experience across advertising, design, brand, media, and finance. He’s held Global CSO roles for major ad networks and served as the first Global Head of Brand Strategy for Goldman Sachs. His experience includes leading strategy at UM, the world's largest media agency, and serving as CEO of Red Peak, which he sold in 2016.\n\nJames has developed successful brand platforms for global clients, earning multiple accolades for effectiveness and innovation including pioneering AI and data integration. With degrees from LSE and University of Leeds, he’s a respected thought leader, published author, and international speaker shaping the future of marketing strategy.",
     linkedin: "https://www.linkedin.com/in/james-fox-0783411"
@@ -60,7 +60,7 @@ const PROFILES = [
     name: "Lauren Pulwer",
     location: "msp",
     title: "Managing Director",
-    image: "lauren_pulwer.webp",
+    image: "lauren_pulwer.jpg",
     description: "",
     bio: "As Managing Director, Lauren Pulwer is leading the day-to-day operations. Prior to joining Fallon in March 2025, Lauren spent the last 13+ years within Publicis Groupe, leading teams across L’Oréal and, more recently, Walmart. On the Walmart business, Lauren was the Managing Director, helping to lead the business across a five-agency creative team that consistently grew year over year while increasing the output of dozens of successful campaigns, spanning a Gilmore Girls reunion, Mean Girls reunion, a first-of-its-kind 23 episode RomCom series, and so much more. Prior to Publicis, Lauren spent time at Arnold New York, McCann, and Ogilvy working across brands like Avon, Verizon, Intel, Kohler, and more.",
     linkedin: "https://www.linkedin.com/in/james-fox-0783411"
@@ -420,9 +420,9 @@ function HomeClientContent() {
 
             <p className="font-family-garamond font-bold pb-3 leading-5">- Nikki Baker, Fallon CEO</p>
           </div>
-          <div className="absolute w-[10%] left-[88%] top-[70%] -translate-x-1/2 -translate-y-1/2 animate-wiggle">
+          <div className="absolute w-[20%] left-[88%] top-[70%] -translate-x-1/2 -translate-y-1/2 animate-wiggle">
             <a href="mailto:newbusiness@fallon.com?subject=From%20QSR%20Site" className="cursor-pointer">
-              <Image src="/typewriter_pink.png" alt="lets chat" width={150} height={150} className="w-full" />
+              <Image src="/email_light.png" alt="lets chat" width={300} height={300} className="w-full" />
             </a>
           </div>
         </section>
@@ -619,7 +619,7 @@ function HomeClientContent() {
             <div className="flex items-center justify-between w-full p-8 pt-22">
               <div className="relative w-3/5 flex justify-left">
                 <h2 className="text-8xl text-left font-family-anton uppercase tracking-wide leading-22 text-[#faf0e0]">But we do a lot more than QSR</h2>
-                <div className="w-[140px] absolute -bottom-22 left-16">
+                <div className="w-[140px] absolute -bottom-22 left-16 z-10">
                   <Image src="/pink_arrow.svg" alt="Pink arrow" width={1200} height={1200} className="w-full" />
                 </div>
               </div>
@@ -633,24 +633,54 @@ function HomeClientContent() {
 
             <div className="flex w-full h-full">
               <div className="flex flex-col w-[39%]">
-                <button className="cursor-pointer" onClick={() => openVideo('1097718141')}>
+                <button className="relative cursor-pointer" onClick={() => openVideo('1097718141')}>
                   <Image src="/more_walmart.png" alt="Walmart" width={1024} height={768} className="w-full" />
+                  <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
+                    <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                      <Image src="logo_walmart.svg" alt="Walmart Logo" width={300} height={100} className="w-full" />
+                    </div>
+                  </div>
                 </button>
-                <button className="cursor-pointer" onClick={() => openVideo('1097718090')}>
+                <button className="relative cursor-pointer" onClick={() => openVideo('1097718090')}>
                   <Image src="/more_showtime.png" alt="Showtime" width={1024} height={768} className="w-full" />
+                  <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
+                    <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                      <Image src="logo_showtime.svg" alt="Walmart Logo" width={300} height={100} className="w-full" />
+                    </div>
+                  </div>
                 </button>
               </div>
               <div className="flex w-[22%]">
-                <button className="w-full h-full cursor-pointer" onClick={() => openVideo('1097718050')}>
+                <button className="relative w-full h-full cursor-pointer" onClick={() => openVideo('1097718050')}>
                   <Image src="/more_pawpatrol.png" alt="Paw Patrol" width={768} height={1024} className="w-full" />
+                  <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
+                    <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                      <Image src="logo_pawpatrol.svg" alt="Walmart Logo" width={300} height={100} className="w-full" />
+                    </div>
+                  </div>
                 </button>
               </div>
               <div className="flex flex-col w-[39%]">
-                <button className="cursor-pointer" onClick={() => openVideo('1097718202')}>
-                  <Image src="/more_matressfirm.png" alt="Matress Firm" width={1024} height={768} className="w-full" />
+                <button className="relative cursor-pointer" onClick={() => openVideo('1097718202')}>
+                  <Image src="/more_mattressfirm.png" alt="Matress Firm" width={1024} height={768} className="w-full" />
+                  <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
+                    <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                      <Image src="logo_mattressfirm.svg" alt="Walmart Logo" width={300} height={100} className="w-full" />
+                    </div>
+                  </div>
                 </button>
-                <button className="cursor-pointer" onClick={() => openVideo('1097718188')}>
+                <button className="relative cursor-pointer" onClick={() => openVideo('1097718188')}>
                   <Image src="/more_taxact.png" alt="Tax Act" width={1024} height={768} className="w-full" />
+                  <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
+                    <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                      <Image src="logo_taxact.svg" alt="Walmart Logo" width={300} height={100} className="w-full" />
+                    </div>
+                  </div>
                 </button>
               </div>
             </div>
@@ -700,8 +730,8 @@ function HomeClientContent() {
           <div className="flex items-center justify-center gap-16 mb-8">
             <Image src="/make_some_magic.svg" alt="wanna make some magic?" width={250} height={250} className="w-80" />
             <Image src="/zig_zag_arrow.svg" alt="lightning bolt" width={200} height={100} className="w-72" />
-            <a href="mailto:newbusiness@fallon.com?subject=From%20QSR%20Site" className="animate-wiggle cursor-pointer">
-              <Image src="/typewriter_red.png" alt="lets chat" width={150} height={150} className="w-50" />
+            <a href="mailto:newbusiness@fallon.com?subject=From%20QSR%20Site" className="cursor-pointer">
+              <Image src="/email_dark.png" alt="lets chat" width={300} height={300} className="w-80" />
             </a>
           </div>
         </div>
@@ -776,7 +806,7 @@ function HomeClientContent() {
                   <Image src='plus_black.svg' width={25} height={25} alt="plus sign" />
                   <Image src='plus_black.svg' width={25} height={25} alt="plus sign" />
                 </div>
-                <Image src="duck.svg" width={35} height={30} alt="Duck head" />
+                <Image src={selectedProfile.location === "ny" ? "pigeon.svg" : "duck.svg"} width={35} height={30} alt="Duck head" />
               </div>
             </div>
           )}
