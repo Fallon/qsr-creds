@@ -50,6 +50,11 @@ const VIDEOS = [
     title: "Walmart"
   },
   {
+    id: "1100120704",
+    vimeoId: "1100120704",
+    title: "Walmart RomCom"
+  },
+  {
     id: "1097718090",
     vimeoId: "1097718090",
     title: "Showtime"
@@ -68,6 +73,16 @@ const VIDEOS = [
     id: "1097718188",
     vimeoId: "1097718188",
     title: "Tax Act"
+  },
+  {
+    id: "1100120042",
+    vimeoId: "1100120042",
+    title: "FrontDoor"
+  },
+  {
+    id: "1100120389",
+    vimeoId: "1100120389",
+    title: "Mattress Firm"
   }
 ];
 
