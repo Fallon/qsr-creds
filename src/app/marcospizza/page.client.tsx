@@ -338,58 +338,6 @@ function HomeClientContent() {
           </div>
         </section>
 
-        {/*<section id="more">
-          <div className="min-h-screen relative bg-[#0e191f] flex flex-col items-center justify-center p-12">
-            <div className="top-16 left-0 flex items-center justify-around w-full -mb-4 z-20">
-              <div className="w-1/2 flex justify-center">
-                <div><h2 className="text-7xl text-left font-family-anton uppercase tracking-wide leading-18 text-[#faf0e0]">But we do a lot<br />more than QSR</h2></div>
-              </div>
-              <div className="w-1/2 text-center">
-                <p className="font-family-garamond text-3xl text-[#faf0e0]">Because a well-rounded agency does better work.</p>
-              </div>
-            </div>
-
-            <div className="w-[90%] aspect-video relative z-10"><iframe className="absolute top-0 left-0 w-full h-full" src="https://player.vimeo.com/video/1081861477?h=d7f676fc2d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Fallon Reel 2025"></iframe></div>
-          </div>
-        </section>*/}
-
-        {/* <section id="more">
-          <div className="min-h-screen bg-[url('/work-bg@2x.png')] bg-cover bg-center relative flex items-center">
-            <div className="flex flex-col w-90 absolute top-[20%] left-10">
-              <h2 className="text-7xl font-family-anton uppercase tracking-wide mb-8 text-black leading-16">But we do a lot more than QSR</h2>
-              <p className="font-family-garamond font-bold pb-3 text-3xl leading-7 text-black">Because a well-rounded agency does better work.</p>
-            </div>
-
-            <div className="absolute w-[28%] left-1/2 top-[52%] -translate-x-1/2 -translate-y-1/2">
-              <Image src="fallon_f.svg" alt="Fallon F" width={1200} height={1200} className="w-full" />
-            </div>
-
-            <div className="absolute w-[16%] left-[40%] top-[22%] -translate-x-1/2 -translate-y-1/2">
-              <button className="w-full cursor-pointer" onClick={() => openVideo('F89VZB')}>
-                <Image src="/F89VZB.png" alt="Thumbnail" width={300} height={300} className="w-full" />
-              </button>
-            </div>
-
-            <div className="absolute w-[25%] left-[75%] top-[20%] -translate-x-1/2 -translate-y-1/2">
-              <button className="w-full cursor-pointer" onClick={() => openVideo('2p48Pr')}>
-                <Image src="/black_friday.png" alt="Black Friday" width={300} height={300} className="w-full" />
-              </button>
-            </div>
-
-            <div className="absolute w-[23%] left-[28%] top-[75%] -translate-x-1/2 -translate-y-1/2">
-              <button className="w-full cursor-pointer" onClick={() => openVideo('4NwHtX')}>
-                <Image src="/deal_book.png" alt="Deal Book" width={300} height={300} className="w-full" />
-              </button>
-            </div>
-
-            <div className="absolute w-[23%] left-[74%] top-[60%] -translate-x-1/2 -translate-y-1/2">
-              <button className="w-full cursor-pointer" onClick={() => openVideo('GRCUX1')}>
-                <Image src="/cheezit.png" alt="Cheez-It" width={300} height={300} className="w-full" />
-              </button>
-            </div>
-          </div>
-        </section> */}
-
       </main>
       <footer className="bg-[url(/bg_footer-80.jpg)] bg-cover bg-center pt-10 pb-2">
         <div className="w-full">

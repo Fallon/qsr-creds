@@ -43,6 +43,31 @@ const VIDEOS = [
     id: "1096610633",
     vimeoId: "1096610633",
     title: "Arby's Pusha T Diss"
+  },
+  {
+    id: "1097718141",
+    vimeoId: "1097718141",
+    title: "Walmart"
+  },
+  {
+    id: "1097718090",
+    vimeoId: "1097718090",
+    title: "Showtime"
+  },
+  {
+    id: "1097718050",
+    vimeoId: "1097718050",
+    title: "Paw Patrol"
+  },
+  {
+    id: "1097718202",
+    vimeoId: "1097718202",
+    title: "Mattress Firm"
+  },
+  {
+    id: "1097718188",
+    vimeoId: "1097718188",
+    title: "Tax Act"
   }
 ];
 
