@@ -134,7 +134,7 @@ function HomeClientContent() {
         <section id="hello" className="min-h-screen bg-[url('/hello-bg.png')] bg-cover bg-center text-foreground flex items-center justify-center relative">
           <div className="flex flex-col w-90 absolute left-10 text-[#faf0e0]">
             <h2 className="text-6xl font-family-anton uppercase text-[#faf0e0] tracking-wider pb-3">
-              <span className="flex gap-2">Hi there! <Image src={'asterisk.svg'} width={54} height={54} alt="asterisk" /></span>{name ? `${name}!` : ''}
+              <span className="flex gap-2">Hi {name ? `${name}!` : 'there'} <Image src={'asterisk.svg'} width={54} height={54} alt="asterisk" /></span>
             </h2>
 
             <p className="font-family-garamond pb-3 leading-5">Not sure if you heard, but after more than a decade, Fallon and Arby’s are parting ways. We couldn’t be prouder of the work we’ve done and how we changed their business. Now we’re looking to change someone else’s. So take a look at what we do and if you’re looking to shake up QSR, give us a call.</p>
