@@ -531,7 +531,7 @@ function HomeClientContent() {
                   <Image src='plus_black.svg' width={25} height={25} alt="plus sign" />
                   <Image src='plus_black.svg' width={25} height={25} alt="plus sign" />
                 </div>
-                <Image src={selectedProfile.location === "ny" ? "pigeon.svg" : "duck.svg"} width={35} height={30} alt="Duck head" />
+                <Image src={selectedProfile.location === "nyc" ? "pigeon.svg" : "duck.svg"} width={35} height={30} alt="Duck head" />
               </div>
             </div>
           )}

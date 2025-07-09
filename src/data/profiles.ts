@@ -22,7 +22,7 @@ const PROFILES = [
   {
     slug: "james_fox",
     name: "James Fox",
-    location: "msp",
+    location: "nyc",
     title: "Chief Strategy Officer",
     image: "james_fox.jpg",
     description: "",
@@ -32,7 +32,7 @@ const PROFILES = [
   {
     slug: "lauren_pulwer",
     name: "Lauren Pulwer",
-    location: "msp",
+    location: "nyc",
     title: "Managing Director",
     image: "lauren_pulwer.jpg",
     description: "",
@@ -50,13 +50,23 @@ const PROFILES = [
     linkedin: "https://www.linkedin.com/in/campbellca/"
   },
   {
+    slug: "erin_simle",
+    name: "Erin Simle",
+    location: "msp",
+    title: "Head of Production",
+    image: "erin_simle.webp",
+    description: "",
+    bio: "As Head of Production at Fallon, Erin Simle leads her production team with a respect for exceptional creativity and fierce efficiency. With over a decade of QSR and food-related work on her reel, she works to find ways to achieve the best-in-class craft and creativity matched with speed and efficiency for an evolving media landscape.\n\nAs a part of Publicis Productions and fueled by Production Intelligence, Erin and the production team are able to unlock value across all content needs. From content production origination through adaptation, localization and versioning. Bridging needs from creative craft, agile content fit for platform and personalized content at scale.",
+    linkedin: "https://www.linkedin.com/in/erinsimle/"
+  },
+  {
     slug: "joe_johnson",
     name: "Joe Johnson",
     location: "msp",
     title: "Group Creative Director",
     image: "joe_johnson.webp",
     description: "",
-    bio: "Just like it says in the header above this sentence, I’m a Group Creative Director at Fallon.\n\nIn the last 20 years, I’ve been a visual designer, art director, and creative director, working on brands like Nike, Verizon, Intel, Walmart, and Mastercard before finding my way to Fallon 11 years ago. My years at Fallon have been spent crafting, launching, and leading campaigns for consumer packaged goods (International Delight, Silk, Woodford Reserve, Bertolli), financial products (H&R Block, Rocket Mortgage, TaxAct), and retail brands (Arby’s, Massage Envy).\n\nI’ve steered the creative ship for Arby’s over the last 5 years. My work for Arby’s has been recognized via Cannes Lions, D&AD, Clios, AICP, Andy, ADDY, EFFIES, as well as a ton of regular people who are not creative advertising awards judges.\n\nOutside of work, I like to grill/smoke BBQ, maintain my DuoLingo streak, read old comic books, collect tattoos, and spend time with my fam— wife, teen daughter, and cockapoo.",
+    bio: "There are many Joe Johnsons in America. This Joe Johnson is a Group Creative Director at Fallon.\n\nOver the span of his career, Joe has been a visual designer, art director, and creative director, working on brands like Nike, Verizon, Intel, Walmart, and Mastercard before finding his way to Fallon. His years at Fallon have been spent crafting, launching, and leading campaigns for consumer packaged goods (International Delight, Silk, Woodford Reserve, Bertolli), financial products (H&R Block, Rocket Mortgage, TaxAct), and retail brands (Arby’s, Massage Envy).\n\nJohnson has steered the creative ship for Arby’s over the last 5 years. His work for Arby’s has been recognized via Cannes Lions, D&AD, Clios, AICP, Andy, ADDY, EFFIES, as well as being recognized by a ton of regular people who eat sandwiches and are not creative advertising awards judges.\n\nOutside of work, Joe likes to grill/smoke BBQ, maintain his DuoLingo streak, read old comic books, collect tattoos, and spend time with his family— wife, teen daughter, and cockapoo.",
     linkedin: "https://www.linkedin.com/in/hirejoejohnson/"
   },
   {
@@ -112,7 +122,7 @@ const PROFILES = [
   {
     slug: "melanie_castell",
     name: "Melanie Castell",
-    location: "msp",
+    location: "nyc",
     title: "Account Director",
     image: "melanie_castell.webp",
     description: "",
@@ -132,7 +142,7 @@ const PROFILES = [
   {
     slug: "steve_torres",
     name: "Steve Torres",
-    location: "msp",
+    location: "nyc",
     title: "Art Director",
     image: "steve_torres.webp",
     description: "",
@@ -142,7 +152,7 @@ const PROFILES = [
   {
     slug: "neil_lopez",
     name: "Neil Lopez",
-    location: "msp",
+    location: "nyc",
     title: "Copywriter",
     image: "neil_lopez.webp",
     description: "",
@@ -156,7 +166,7 @@ const PROFILES = [
     title: "Group Strategy Director",
     image: "adam_chorney.webp",
     description: "",
-    bio: "Hi, I’m Adam. I’ve been in Minneapolis working as a strategist at Fallon for the past 20 years. I moved here to learn from the agency’s pioneering connection planning department, where I spent 6 years primarily leading the NBC Universal media account, and eventually rising to become Director of Connection Planning. In recent years I’ve been more of an all-purpose strategist, leading brand strategy for many of our biggest clients, including Cadillac, H&R Block, and Arby’s. I’ve also developed a bit of a specialty in food brands of late, working across the Jack Link’s portfolio of meat snacks brands, the Mizkan portfolio of sauce brands (particularly Bertolli pasta sauce), and Cuisinart’s lineup of kitchen appliances.\n\nMy team’s work has regularly been recognized for creativity and effectiveness at the EFFIES, Cannes Lions, Creative Media Awards, and Jay Chiat Strategy Awards.\n\nPrior to Fallon, I was in New York at The Media Kitchen, where I worked on creative media strategies for brands like Sci Fi Channel and Delta’s Song Airlines.\n\nOn the home front, me, my wife Jessica, and our suddenly teenaged daughter Lucinda are living the Minneapolis transplant’s dream with an old house on a creek in the heart of the city.",
+    bio: "Adam Chorney has been in Minneapolis working as a strategist at Fallon for the past 20 years. He  moved here to learn from the agency’s pioneering connection planning department, where he spent 6 years primarily leading the NBC Universal media account, and eventually rising to become Director of Connection Planning. In recent years Adam has been more of an all-purpose strategist, leading brand strategy for many of our biggest clients, including Cadillac, H&R Block, and Arby’s. He’s also developed a bit of a specialty in food brands of late, working across the Jack Link’s portfolio of meat snacks brands, the Mizkan portfolio of sauce brands (particularly Bertolli pasta sauce), and Cuisinart’s lineup of kitchen appliances.\n\nAdam’s team’s work has regularly been recognized for creativity and effectiveness at the EFFIES, Cannes Lions, Creative Media Awards, and Jay Chiat Strategy Awards.\n\nPrior to Fallon, Chorney was in New York at The Media Kitchen, where he worked on creative media strategies for brands like Sci Fi Channel and Delta’s Song Airlines.\n\nOn the home front, Adam, his wife Jessica, and their suddenly teenaged daughter Lucinda are living the Minneapolis transplant’s dream with an old house on a creek in the heart of the city.",
     linkedin: "https://www.linkedin.com/in/adamchorney"
   },
   {
@@ -172,22 +182,12 @@ const PROFILES = [
   {
     slug: "brandon_fields",
     name: "Brandon Fields",
-    location: "msp",
+    location: "nyc",
     title: "Account Supervisor",
     image: "brandon_fields.webp",
     description: "",
     bio: "Brandon Fields is an Account Supervisor and a native of New York City, having been with Fallon for just over a year. He is passionate about fostering strong relationships and creating collaborative environments to produce the best work possible. No stranger to Publicis Groupe, Brandon began his career at Sapient Razorfish, where he worked on CPG and tech brands, including Church and Dwight and Samsung.\n\nPrior to joining Fallon, Brandon spent three years at Wieden & Kennedy, managing vehicle reveals and launches for iconic nameplates such as Mustang, F-150, Bronco, and their SUV lineup.\n\nAt Fallon, Brandon hit the ground running. He has led national campaigns, limited-time offers, and activations for the Arby’s brand, enjoying every moment. His most recent project was the Arby’s AC Barbecue campaign, where he collaborated with well-known comedians and actors Anthony Anderson and Cedric the Entertainer. This campaign featured their signature BBQ sauces paired with Arby’s 1/4lb pulled pork and 1/4lb brisket sandwiches. Brandon thrives on collaboration and works closely with strategy, creative, and production teams to make the impossible possible.\n\nBrandon enjoys watching a good show in his free time, traveling solo, and exploring new culinary experiences.",
     linkedin: "https://www.linkedin.com/in/bfields630"
-  },
-  {
-    slug: "erin_simle",
-    name: "Erin Simle",
-    location: "msp",
-    title: "Head of Production",
-    image: "erin_simle.webp",
-    description: "",
-    bio: "As Head of Production at Fallon, Erin Simle leads her production team with a respect for exceptional creativity and fierce efficiency. With over a decade of QSR and food-related work on her reel, she works to find ways to achieve the best-in-class craft and creativity matched with speed and efficiency for an evolving media landscape.\n\nAs a part of Publicis Productions and fueled by Production Intelligence, Erin and the production team are able to unlock value across all content needs. From content production origination through adaptation, localization and versioning. Bridging needs from creative craft, agile content fit for platform and personalized content at scale.",
-    linkedin: "https://www.linkedin.com/in/erinsimle/"
   },
 ];
 
