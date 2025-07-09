@@ -2,7 +2,6 @@
 
 import { useState, useEffect, Suspense } from "react";
 import Image from "next/image";
-import { redirect, useSearchParams } from "next/navigation";
 import {
   Dialog,
   DialogContent,
@@ -25,12 +24,8 @@ import SECTIONS from "@/data/sections";
 import VIDEOS from "@/data/videos";
 
 function HomeClientContent() {
-  const searchParams = useSearchParams();
-  const name = searchParams.get('name');
-
-  if (name === "Pizza Hut")  {
-    redirect('/pizzahut');
-  }
+  // const searchParams = useSearchParams();
+  const name = "Jim";
 
   const [ navDark, setNavDark ] = useState<boolean>(false);
 
@@ -148,7 +143,7 @@ function HomeClientContent() {
           </div>
           <div className="absolute w-[20%] left-[88%] top-[70%] -translate-x-1/2 -translate-y-1/2 animate-wiggle">
             <a href="mailto:newbusiness@fallon.com?subject=From%20QSR%20Site" className="cursor-pointer">
-              <Image src="/email_light.png" alt="lets chat" width={300} height={300} className="w-full" />
+              <Image src="/email_top.png" alt="lets chat" width={300} height={300} className="w-full" />
             </a>
           </div>
         </section>
@@ -190,7 +185,7 @@ function HomeClientContent() {
             <div className="absolute w-[40%] left-[10%] top-[8%]">
               <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096611711')}>
                 <Image src="/tiktok.png" alt="TikTok" width={768} height={768} className="w-full visible group-hover/item:invisible" />
-                <Image src="/tiktok_overlay.svg" alt="TikTok Overlay" width={768} height={768} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full invisible group-hover/item:visible" />
+                <Image src="/missing_menu_overlay.svg" alt="TikTok Overlay" width={768} height={768} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full invisible group-hover/item:visible" />
               </button>
             </div>
 
@@ -239,14 +234,14 @@ function HomeClientContent() {
             <div className="absolute w-[30%] left-[12%] top-[72%]">
               <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096610753')}>
                 <Image src="/lie_detector_test.png" alt="Lie Detector Test" width={768} height={768} className="w-full visible group-hover/item:invisible" />
-                <Image src="/lie_detector_test_overlay.svg" alt="Lie Detector Test Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
+                <Image src="/try_detector_overlay.svg" alt="Lie Detector Test Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
               </button>
             </div>
 
             <div className="absolute w-[40%] left-[45%] bottom-[-1%]">
               <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096610633')}>
                 <Image src="/pusha_t_diss.png" alt="Push T Diss" width={768} height={768} className="w-full visible group-hover/item:invisible" />
-                <Image src="/pusha_t_diss_overlay.svg" alt="Push T Diss Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
+                <Image src="/diss_track_overlay.svg" alt="Push T Diss Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
               </button>
             </div>
 
@@ -349,7 +344,7 @@ function HomeClientContent() {
             <Image src="/make_some_magic.svg" alt="wanna make some magic?" width={250} height={250} className="w-80" />
             <Image src="/zig_zag_arrow.svg" alt="lightning bolt" width={200} height={100} className="w-72" />
             <a href="mailto:newbusiness@fallon.com?subject=From%20QSR%20Site" className="cursor-pointer">
-              <Image src="/email_dark.png" alt="lets chat" width={300} height={300} className="w-80" />
+              <Image src="/email_bottom.png" alt="lets chat" width={300} height={300} className="w-80" />
             </a>
           </div>
         </div>
