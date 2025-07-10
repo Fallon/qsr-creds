@@ -22,7 +22,7 @@ const SectionMoreWendys = ({ openVideo }: { openVideo: (videoId: string) => void
         <div className="flex flex-col items-center justify-center w-full h-full gap-2 p-8 pb-4">
           <div className="flex gap-2 w-full h-full">
             <button className="relative w-1/3 cursor-pointer" onClick={() => openVideo('1100120704')}>
-              <Image src="/more_walmart_add_resized.png" alt="Walmart" width={1024} height={768} className="w-full" />
+              <Image src="/more_walmart_add.jpg" alt="Walmart" width={712} height={365} className="w-full" />
               <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
                 <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -31,7 +31,7 @@ const SectionMoreWendys = ({ openVideo }: { openVideo: (videoId: string) => void
               </div>
             </button>
             <button className="relative w-1/3 cursor-pointer" onClick={() => openVideo('1100120389')}>
-              <Image src="/more_mattressfirm.png" alt="Matress Firm" width={1024} height={768} className="w-full" />
+              <Image src="/more_mattressfirm.jpg" alt="Matress Firm" width={712} height={365} className="w-full" />
               <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
                 <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -40,7 +40,7 @@ const SectionMoreWendys = ({ openVideo }: { openVideo: (videoId: string) => void
               </div>
             </button>
             <button className="relative w-1/3 cursor-pointer" onClick={() => openVideo('1100120042')}>
-              <Image src="/more_frontdoor_resized.png" alt="Showtime" width={1024} height={768} className="w-full" />
+              <Image src="/more_frontdoor.jpg" alt="Showtime" width={712} height={365} className="w-full" />
               <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
                 <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -51,7 +51,7 @@ const SectionMoreWendys = ({ openVideo }: { openVideo: (videoId: string) => void
           </div>
           <div className="relative flex gap-2 justify-center w-full h-full">
             <button className="relative w-1/3 cursor-pointer" onClick={() => openVideo('1097718090')}>
-              <Image src="/more_showtime.png" alt="Showtime" width={1024} height={768} className="w-full" />
+              <Image src="/more_showtime.jpg" alt="Showtime" width={712} height={365} className="w-full" />
               <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
                 <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -60,7 +60,7 @@ const SectionMoreWendys = ({ openVideo }: { openVideo: (videoId: string) => void
               </div>
             </button>
             <button className="relative w-1/3 cursor-pointer" onClick={() => openVideo('1097718141')}>
-              <Image src="/more_walmart.png" alt="Walmart" width={1024} height={768} className="w-full" />
+              <Image src="/more_walmart.jpg" alt="Walmart" width={712} height={365} className="w-full" />
               <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
                 <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">

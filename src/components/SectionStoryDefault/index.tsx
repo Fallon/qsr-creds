@@ -10,7 +10,7 @@ const SectionStoryDefault = (
   }) => {
   return (
     <section id="story">
-      <div className="aspect-[1/1.1] bg-[url('/bg_sky-80.jpg')] bg-cover bg-center relative flex items-center">
+      <div className="aspect-[1/1.1] bg-[url('/favorites_bg.jpg')] bg-cover bg-center relative flex items-center">
         <div className="flex flex-col w-[20%] absolute top-[20%] left-10">
           <Image src="/favorite_projects.svg" alt="Some of our favorite projects" width={500} height={1200} className="w-[90%] mb-4" />
           {/* <h2 className="text-6xl font-family-anton uppercase tracking-wide pb-3 text-black leading-14">Some<br />of Our Favorite Projects</h2> */}

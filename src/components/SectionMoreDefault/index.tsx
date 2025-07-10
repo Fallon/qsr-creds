@@ -22,7 +22,7 @@ const SectionMoreDefault = ({ openVideo }: { openVideo: (videoId: string) => voi
         <div className="flex w-full h-full">
           <div className="flex flex-col w-[39%]">
             <button className="relative cursor-pointer" onClick={() => openVideo('1097718141')}>
-              <Image src="/more_walmart.png" alt="Walmart" width={1024} height={768} className="w-full" />
+              <Image src="/more_walmart.jpg" alt="Walmart" width={712} height={365} className="w-full" />
               <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
                 <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -31,7 +31,7 @@ const SectionMoreDefault = ({ openVideo }: { openVideo: (videoId: string) => voi
               </div>
             </button>
             <button className="relative cursor-pointer" onClick={() => openVideo('1097718090')}>
-              <Image src="/more_showtime.png" alt="Showtime" width={1024} height={768} className="w-full" />
+              <Image src="/more_showtime.jpg" alt="Showtime" width={712} height={365} className="w-full" />
               <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
                 <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -53,7 +53,7 @@ const SectionMoreDefault = ({ openVideo }: { openVideo: (videoId: string) => voi
           </div>
           <div className="flex flex-col w-[39%]">
             <button className="relative cursor-pointer" onClick={() => openVideo('1097718202')}>
-              <Image src="/more_mattressfirm.png" alt="Matress Firm" width={1024} height={768} className="w-full" />
+              <Image src="/more_mattressfirm.jpg" alt="Matress Firm" width={712} height={365} className="w-full" />
               <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
                 <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -62,7 +62,7 @@ const SectionMoreDefault = ({ openVideo }: { openVideo: (videoId: string) => voi
               </div>
             </button>
             <button className="relative cursor-pointer" onClick={() => openVideo('1097718188')}>
-              <Image src="/more_taxact.png" alt="Tax Act" width={1024} height={768} className="w-full" />
+              <Image src="/more_taxact.png" alt="Tax Act" width={712} height={365} className="w-full" />
               <div className="absolute w-full h-full top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-100">
                 <div className="opacity-50 absolute top-0 left-0 w-full h-full bg-black"></div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
