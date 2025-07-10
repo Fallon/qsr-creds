@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, Suspense } from "react";
 import Image from "next/image";
 // import { useSearchParams } from "next/navigation";
 import {
@@ -11,16 +11,17 @@ import {
   DialogTitle,
   // DialogTrigger,
 } from "@/components/ui/dialog";
+import NavDefault from "@/components/NavDefault";
+import SectionHelloDefault from "@/components/SectionHelloDefault";
+import SectionReelDefault from "@/components/SectionReelDefault";
+import SectionStoryDefault from "@/components/SectionStoryDefault";
+import SectionTeamDefault from "@/components/SectionTeamDefault";
+// import SectionMoreDefault from "@/components/SectionMoreDefault";
+import FooterDefault from "@/components/FooterDefault";
 // import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
-import { Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 import PROFILES from "@/data/profiles";
 import LINKS_ROOT from "@/data/links";
-import SECTIONS from "@/data/sections";
 import VIDEOS from "@/data/videos";
 
 const LINKS = LINKS_ROOT.filter((link) => link.section !== "more");
@@ -30,47 +31,10 @@ function HomeClientContent() {
   // const name = searchParams.get('name');
   const name = "Pizza Hut";
 
-  const [ navDark, setNavDark ] = useState<boolean>(false);
-
   const [ selectedVideo, setSelectedVideo ] = useState<typeof VIDEOS[0] | null>(null);
   const [ isVideoDialogOpen, setIsVideoDialogOpen ] = useState(false);
   const [ selectedProfile, setSelectedProfile ] = useState<typeof PROFILES[0] | null>(null);
   const [ isProfileDialogOpen, setIsProfileDialogOpen ] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const sectionConfig = SECTIONS.find(s => s.id === entry.target.id);
-            if (sectionConfig) {
-              setNavDark(sectionConfig.dark);
-            }
-          }
-        });
-      },
-      {
-        threshold: 0, // Trigger when 50% of the section is visible
-        rootMargin: '-80px 0px -100% 0px' // Adjust this to control when the observer triggers
-      }
-    );
-
-    SECTIONS.forEach(({ id }) => {
-      const element = document.getElementById(id);
-      if (element) {
-        observer.observe(element);
-      }
-    });
-
-    return () => {
-      SECTIONS.forEach(({ id }) => {
-        const element = document.getElementById(id);
-        if (element) {
-          observer.unobserve(element);
-        }
-      });
-    };
-  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -100,256 +64,15 @@ function HomeClientContent() {
 
   return (
     <div className="relative min-w-[1280px]">
-      <nav className={`w-full px-6 pt-3 font-family-anton fixed top-0 z-50 ${navDark ? "text-black" : "text-[#faf0e0]"}`}>
-        <div className={`flex items-center justify-between align-middle py-2 border-b-2 ${navDark ? "border-black" : "border-[#faf0e0]"}`}>
-          <div className="flex gap-1 pr-[150px]">
-            <Image src={navDark ? 'plus_black.svg' : 'plus.svg'} width={30} height={30} alt="plus sign" />
-            <Image src={navDark ? 'plus_black.svg' : 'plus.svg'} width={30} height={30} alt="plus sign" />
-            <Image src={navDark ? 'plus_black.svg' : 'plus.svg'} width={30} height={30} alt="plus sign" />
-          </div>
-          <ul className="flex gap-4 uppercase">
-            {LINKS.map(link => (
-              <li key={link.section}>
-                <button 
-                  onClick={() => scrollToSection(link.section)}
-                  className="cursor-pointer uppercase"
-                >
-                  {link.label}
-                </button>
-              </li>
-            ))}
-          </ul>
-          <div className="flex gap-3">
-            <button 
-              onClick={() => scrollToSection('hello')}
-              className="cursor-pointer">
-              <Image src={navDark ? 'logo-dark.svg' : 'logo-light.svg'} width={150} height={20} alt="Fallon logo" />
-            </button>
-            <div className="flex gap-1">
-              <Image src={navDark ? 'plus_black.svg' : 'plus.svg'} width={30} height={30} alt="plus sign" />
-              <Image src={navDark ? 'plus_black.svg' : 'plus.svg'} width={30} height={30} alt="plus sign" />
-              <Image src={navDark ? 'plus_black.svg' : 'plus.svg'} width={30} height={30} alt="plus sign" />
-            </div>
-          </div>
-        </div>
-      </nav>
+      <NavDefault links={LINKS.filter(link => link.section !== "more")} scrollToSection={scrollToSection} />
       <main className="flex flex-col min-h-screen">
-        <section id="hello" className="min-h-screen bg-[url('/hello-bg.png')] bg-cover bg-center text-foreground flex items-center justify-center relative">
-          <div className="flex flex-col w-90 absolute left-10 text-[#faf0e0]">
-            <h2 className="text-6xl font-family-anton uppercase text-[#faf0e0] tracking-wider pb-3">
-              <span className="flex gap-2">Hi there! <Image src={'asterisk.svg'} width={54} height={54} alt="asterisk" /></span>{name ? `${name}!` : ''}
-            </h2>
-
-            <p className="font-family-garamond pb-3 leading-5">Not sure if you heard, but after more than a decade, Fallon and Arby’s are parting ways. We couldn’t be prouder of the work we’ve done and how we changed their business. Now we’re looking to change someone else’s. So take a look at what we do and if you’re looking to shake up QSR, give us a call.</p>
-
-            <p className="font-family-garamond font-bold pb-3 leading-5">- Nikki Baker, Fallon CEO</p>
-          </div>
-          <div className="absolute w-[20%] left-[88%] top-[70%] -translate-x-1/2 -translate-y-1/2 animate-wiggle">
-            <a href="mailto:newbusiness@fallon.com?subject=From%20QSR%20Site" className="cursor-pointer">
-              <Image src="/email_top.png" alt="lets chat" width={300} height={300} className="w-full" />
-            </a>
-          </div>
-        </section>
-
-        <section id="reel">
-          <div className="aspect-video relative">
-            <iframe className="absolute top-0 left-0 w-full h-full border-0" src="https://player.vimeo.com/video/1097696716?h=d7f676fc2d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Fallon Reel 2025"></iframe>
-          </div>
-        </section>
-
-        <section id="story">
-          <div className="aspect-[1/1.1] bg-[url('/bg_sky-80.jpg')] bg-cover bg-center relative flex items-center">
-            <div className="flex flex-col w-[20%] absolute top-[20%] left-10">
-              <Image src="/favorite_projects.svg" alt="Some of our favorite projects" width={500} height={1200} className="w-[90%] mb-4" />
-              {/* <h2 className="text-6xl font-family-anton uppercase tracking-wide pb-3 text-black leading-14">Some<br />of Our Favorite Projects</h2> */}
-              <p className="font-family-garamond font-bold pb-3 leading-8 text-white text-3xl">These ideas moved culture, and more importantly, sandwiches.</p>
-            </div>
-
-            <div className="absolute w-[6%] left-[25%] top-[23%] -translate-x-1/2 -translate-y-1/2">
-              <Image src="arrow_1.svg" alt="Arrow" width={300} height={1200} className="w-full" />
-            </div>
-
-            <div className="absolute w-[6%] right-[5%] top-[15%] -translate-x-1/2 -translate-y-1/2 -scale-x-100 rotate-[160deg]">
-              <Image src="arrow_1.svg" alt="Arrow" width={300} height={1200} className="w-full" />
-            </div>
-
-            <div className="absolute w-[6%] right-[22%] top-[35%] -translate-x-1/2 -translate-y-1/2 rotate-[10deg]">
-              <Image src="arrow_2.svg" alt="Arrow" width={300} height={1200} className="w-full" />
-            </div>
-
-            <div className="absolute w-[8%] left-[45%] top-[75%] -translate-x-1/2 -translate-y-1/2 -scale-x-100 rotate-[10deg]">
-              <Image src="arrow_1.svg" alt="Arrow" width={300} height={1200} className="w-full" />
-            </div>
-
-            <div className="absolute w-[5%] right-[12%] top-[70%] -translate-x-1/2 -translate-y-1/2 rotate-[0deg]">
-              <Image src="arrow_3.svg" alt="Arrow" width={300} height={1200} className="w-full" />
-            </div>
-
-            <div className="absolute w-[40%] left-[10%] top-[8%]">
-              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096611711')}>
-                <Image src="/tiktok.png" alt="TikTok" width={768} height={768} className="w-full visible group-hover/item:invisible" />
-                <Image src="/missing_menu_overlay.svg" alt="TikTok Overlay" width={768} height={768} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full invisible group-hover/item:visible" />
-              </button>
-            </div>
-
-            <div className="absolute w-[32%] left-[30%] top-[15%]">
-              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096611660')}>
-                <Image src="/sandwich_tattoo.png" alt="Sandwich Tattoo" width={768} height={768} className="w-full visible group-hover/item:invisible" />
-                <Image src="/sandwich_tattoo_overlay.svg" alt="Sandwich Tattoo Overlay" width={768} height={768} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] invisible group-hover/item:visible" />
-              </button>
-            </div>
-
-            <div className="absolute w-[26%] left-[60%] top-[6%]">
-              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096611377')}>
-                <Image src="/good_burger_2.png" alt="Good Burger 2" width={768} height={768} className="w-full visible group-hover/item:invisible" />
-                <Image src="/good_burger_2_overlay.svg" alt="Good Burger 2 Overlay" width={768} height={768} className="w-[85%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
-              </button>
-            </div>
-
-            <div className="absolute w-[19%] left-[78%] top-[30%]">
-              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096610857')}>
-                <Image src="/smoked_sweats.png" alt="Meat Sweats" width={768} height={768} className="w-full visible group-hover/item:invisible" />
-                <Image src="/meat_sweats_overlay.svg" alt="Meat Sweats Overlay" width={768} height={768} className="w-[90%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
-              </button>
-            </div>
-
-            <div className="absolute w-[24%] left-[2%] top-[44%]">
-              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096611279')}>
-                <Image src="/vodka.png" alt="Vodka" width={768} height={768} className="w-full visible group-hover/item:invisible" />
-                <Image src="/vodka_overlay.svg" alt="Vodka Overlay" width={768} height={768} className="w-[90%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
-              </button>
-            </div>
-
-            <div className="absolute w-[23%] left-[26%] top-[46%]">
-              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096611080')}>
-                <Image src="/order_of_potato_cakes.png" alt="The Order of Potato Cakes" width={768} height={768} className="w-full visible group-hover/item:invisible" />
-                <Image src="/order_of_potato_cakes_overlay.svg" alt="The Order of Potato Cakes Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
-              </button>
-            </div>
-
-            <div className="absolute w-[20%] left-[54%] top-[44%]">
-              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096610956')}>
-                <Image src="/diablo_dare.png" alt="Diablo Dare" width={768} height={768} className="w-full visible group-hover/item:invisible" />
-                <Image src="/diablo_dare_overlay.svg" alt="Diablo Dare Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
-              </button>
-            </div>
-
-            <div className="absolute w-[30%] left-[12%] top-[72%]">
-              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096610753')}>
-                <Image src="/lie_detector_test.png" alt="Lie Detector Test" width={768} height={768} className="w-full visible group-hover/item:invisible" />
-                <Image src="/try_detector_overlay.svg" alt="Lie Detector Test Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
-              </button>
-            </div>
-
-            <div className="absolute w-[40%] left-[45%] bottom-[-1%]">
-              <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096610633')}>
-                <Image src="/pusha_t_diss.png" alt="Push T Diss" width={768} height={768} className="w-full visible group-hover/item:invisible" />
-                <Image src="/diss_track_overlay.svg" alt="Push T Diss Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
-              </button>
-            </div>
-
-            <div className="absolute w-[40px] left-[50%] bottom-[15px] -translate-x-1/2 -translate-y-1/2">
-              <button onClick={() => scrollToSection('team')} className="cursor-pointer">
-                <Image src="/down_arrow_black.svg" alt="Black down arrow" width={40} height={40} className="w-full" />
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section id="team">
-          <div className="relative w-full aspect-[4/3] bg-[#f03010] flex items-center">
-            {/* <div className="absolute w-[16%] left-[5%] top-[5%]">
-              <img src="lockup_mpls.svg" alt="Fallon MPLS" className="w-full" />
-            </div> */}
-
-            {/* <div className="absolute w-[16%] left-[95%] top-[5%] -translate-x-[100%]">
-              <img src="lockup_ny.svg" alt="Fallon New York" className="w-full" />
-            </div> */}
-
-            <div className="absolute w-[12%] left-[66%] top-[12%] animate-spin">
-              <Image src="/outsmart.svg" alt="Outsmart" width={100} height={100} className="w-full" />
-            </div>
-
-            <div className="absolute w-[12%] left-[12%] top-[60%] animate-spin-backwards">
-              <Image src="/outspend.svg" alt="Outspend" width={100} height={100} className="w-full" />
-            </div>
-
-            {/* <div className="absolute w-[2%] left-[90%] top-[15%] -translate-x-[100%] flex gap-1">
-              <img src="plus_pink.svg" alt="Pink Plus Sign" className="w-full" />
-              <img src="plus_pink.svg" alt="Pink Plus Sign" className="w-full" />
-              <img src="plus_pink.svg" alt="Pink Plus Sign" className="w-full" />
-            </div> */}
-
-            {/* <div className="absolute w-[2%] left-[5%] top-[90%] flex gap-1">
-              <img src="plus_pink.svg" alt="Pink Plus Sign" className="w-full" />
-              <img src="plus_pink.svg" alt="Pink Plus Sign" className="w-full" />
-              <img src="plus_pink.svg" alt="Pink Plus Sign" className="w-full" />
-            </div> */}
-
-            <div className="absolute w-[46%] left-[30px] top-[80px] z-20 pointer-events-none">
-              <Image src="/meet_your_next_team.svg" alt="Meet your next team" width={1024} height={1024} className="w-full" />
-            </div>
-
-            <div className="absolute w-[71%] left-[29%] top-[21vw] border-b-2 border-[#faf0e0] z-10">
-              <Swiper
-                className="custom-swiper"
-                modules={[Navigation, Pagination]}
-                spaceBetween={20}
-                slidesPerView={4.25}
-                slidesPerGroup={4}
-                navigation
-                pagination={{ clickable: true }}
-                // mousewheel={true}
-                // freeMode={{
-                //   enabled: true,
-                //   sticky: true,
-                // }}
-                // onSlideChange={() => console.log('slide change')}
-                // onSwiper={(swiper) => console.log(swiper)}
-              >
-                {PROFILES.map((member, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="relative flex flex-col justify-start cursor-pointer" onClick={() => openProfile(member.slug)}>
-                      <Image src={`/bios/${member.image}`} alt={member.name} width={300} height={300} className="w-full mb-32" />
-                      <div className="absolute bottom-0">
-                        <p className="text-5xl font-family-anton uppercase tracking-wide leading-11 text-[#fdaaff] mb-2 pb-2 border-b-2 border-[#faf0e0] whitespace-pre-line">{member.name.split(' ').join('\n')}</p>
-                        <p className="font-family-garamond text-md font-bold mb-1 text-[#fdaaff]">{member.title}</p>
-                        <p className="font-family-anton uppercase text-sm text-[#faf0e0]">{member.description}</p>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-
-            <div className="absolute p-6 left-0 bottom-[2%] flex items-center justify-between w-full">
-              <div className="">
-                <Image src='plus.svg' width={30} height={30} alt="plus sign" />
-              </div>
-              {/* <div className="">
-                <button onClick={() => scrollToSection('more')} className="cursor-pointer">
-                  <Image src="down_arrow_pink.svg" alt="Pink down arrow" width={40} height={40} />
-                </button>
-              </div> */}
-              <div className="">
-                <Image src='plus.svg' width={30} height={30} alt="plus sign" />
-              </div>
-            </div>
-          </div>
-        </section>
-
+        <SectionHelloDefault name={name || ''} />
+        <SectionReelDefault vimeoId="1097696716" />
+        <SectionStoryDefault openVideo={openVideo} scrollToSection={scrollToSection} />
+        <SectionTeamDefault profiles={PROFILES} openProfile={openProfile} />
+        {/* <SectionMoreDefault openVideo={openVideo} /> */}
       </main>
-      <footer className="bg-[url(/bg_footer-80.jpg)] bg-cover bg-center pt-10 pb-2">
-        <div className="w-full">
-          <div className="flex items-center justify-center gap-16 mb-8">
-            <Image src="/make_some_magic.svg" alt="wanna make some magic?" width={250} height={250} className="w-80" />
-            <Image src="/zig_zag_arrow.svg" alt="lightning bolt" width={200} height={100} className="w-72" />
-            <a href="mailto:newbusiness@fallon.com?subject=From%20QSR%20Site" className="animate-wiggle cursor-pointer">
-              <Image src="/email_bottom.png" alt="lets chat" width={300} height={300} className="w-80" />
-            </a>
-          </div>
-        </div>
-      </footer>
+      <FooterDefault />
 
       {/* Video Dialog */}
       <Dialog open={isVideoDialogOpen} onOpenChange={setIsVideoDialogOpen}>
