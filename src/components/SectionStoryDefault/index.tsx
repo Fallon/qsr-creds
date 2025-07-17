@@ -39,63 +39,63 @@ const SectionStoryDefault = (
 
         <div className="absolute w-[40%] left-[10%] top-[8%]">
           <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096611711')}>
-            <Image src="/tiktok.png" alt="TikTok" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+            <Image src="/tiktok@2x.png" alt="TikTok" width={768} height={768} className="w-full visible group-hover/item:invisible" />
             <Image src="/missing_menu_overlay.svg" alt="TikTok Overlay" width={768} height={768} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full invisible group-hover/item:visible" />
           </button>
         </div>
 
         <div className="absolute w-[32%] left-[30%] top-[15%]">
           <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096611660')}>
-            <Image src="/sandwich_tattoo.png" alt="Sandwich Tattoo" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+            <Image src="/sandwich_tattoo@2x.png" alt="Sandwich Tattoo" width={768} height={768} className="w-full visible group-hover/item:invisible" />
             <Image src="/sandwich_tattoo_overlay.svg" alt="Sandwich Tattoo Overlay" width={768} height={768} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] invisible group-hover/item:visible" />
           </button>
         </div>
 
         <div className="absolute w-[26%] left-[60%] top-[6%]">
           <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096611377')}>
-            <Image src="/good_burger_2.png" alt="Good Burger 2" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+            <Image src="/good_burger_2@2x.png" alt="Good Burger 2" width={768} height={768} className="w-full visible group-hover/item:invisible" />
             <Image src="/good_burger_2_overlay.svg" alt="Good Burger 2 Overlay" width={768} height={768} className="w-[85%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
           </button>
         </div>
 
         <div className="absolute w-[19%] left-[78%] top-[30%]">
           <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096610857')}>
-            <Image src="/smoked_sweats.png" alt="Meat Sweats" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+            <Image src="/smoked_sweats@2x.png" alt="Meat Sweats" width={768} height={768} className="w-full visible group-hover/item:invisible" />
             <Image src="/meat_sweats_overlay.svg" alt="Meat Sweats Overlay" width={768} height={768} className="w-[90%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
           </button>
         </div>
 
         <div className="absolute w-[24%] left-[2%] top-[44%]">
           <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096611279')}>
-            <Image src="/vodka.png" alt="Vodka" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+            <Image src="/vodka@2x.png" alt="Vodka" width={768} height={768} className="w-full visible group-hover/item:invisible" />
             <Image src="/vodka_overlay.svg" alt="Vodka Overlay" width={768} height={768} className="w-[90%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
           </button>
         </div>
 
         <div className="absolute w-[23%] left-[26%] top-[46%]">
           <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096611080')}>
-            <Image src="/order_of_potato_cakes.png" alt="The Order of Potato Cakes" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+            <Image src="/order_of_potato_cakes@2x.png" alt="The Order of Potato Cakes" width={768} height={768} className="w-full visible group-hover/item:invisible" />
             <Image src="/order_of_potato_cakes_overlay.svg" alt="The Order of Potato Cakes Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
           </button>
         </div>
 
         <div className="absolute w-[20%] left-[54%] top-[44%]">
           <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096610956')}>
-            <Image src="/diablo_dare.png" alt="Diablo Dare" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+            <Image src="/diablo_dare@2x.png" alt="Diablo Dare" width={768} height={768} className="w-full visible group-hover/item:invisible" />
             <Image src="/diablo_dare_overlay.svg" alt="Diablo Dare Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
           </button>
         </div>
 
         <div className="absolute w-[30%] left-[12%] top-[72%]">
           <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096610753')}>
-            <Image src="/lie_detector_test.png" alt="Lie Detector Test" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+            <Image src="/lie_detector_test@2x.png" alt="Lie Detector Test" width={768} height={768} className="w-full visible group-hover/item:invisible" />
             <Image src="/try_detector_overlay.svg" alt="Lie Detector Test Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
           </button>
         </div>
 
         <div className="absolute w-[40%] left-[45%] bottom-[-1%]">
           <button className="w-full relative cursor-pointer group/item" onClick={() => openVideo('1096610633')}>
-            <Image src="/pusha_t_diss.png" alt="Push T Diss" width={768} height={768} className="w-full visible group-hover/item:invisible" />
+            <Image src="/pusha_t_diss@2x.png" alt="Push T Diss" width={768} height={768} className="w-full visible group-hover/item:invisible" />
             <Image src="/diss_track_overlay.svg" alt="Push T Diss Overlay" width={768} height={768} className="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 invisible group-hover/item:visible" />
           </button>
         </div>
