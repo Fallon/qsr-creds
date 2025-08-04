@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Suspense, use } from "react";
+import { useState, Suspense } from "react";
 import Image from "next/image";
 import { redirect, useSearchParams } from "next/navigation";
 import {
