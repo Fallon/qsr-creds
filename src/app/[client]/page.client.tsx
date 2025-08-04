@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { useState, Suspense, use } from "react";
 import Image from "next/image";
 import { redirect, useSearchParams } from "next/navigation";
 import {
@@ -24,14 +24,18 @@ import FooterDefault from "@/components/FooterDefault";
 import PROFILES from "@/data/profiles";
 import LINKS from "@/data/links";
 import VIDEOS from "@/data/videos";
+import SITES from "@/data/sites";
 
-function HomeClientContent() {
+function HomeClientContent({ client }: { client: string }) {
   const searchParams = useSearchParams();
   const name = searchParams.get('name');
 
   if (name === "Pizza Hut")  {
     redirect('/pizzahut');
   }
+
+  const site = SITES.find(s => s.client === client);
+  const messageName = site?.name || name;
 
   const [ selectedVideo, setSelectedVideo ] = useState<typeof VIDEOS[0] | null>(null);
   const [ isVideoDialogOpen, setIsVideoDialogOpen ] = useState(false);
@@ -69,7 +73,7 @@ function HomeClientContent() {
       <NavDefault links={LINKS} scrollToSection={scrollToSection} />
 
       <main className="flex flex-col min-h-screen">
-        <SectionHelloDefault name={name || ''} />
+        <SectionHelloDefault name={messageName || ''} />
         <SectionReelDefault vimeoId="1097696716" />
         <SectionStoryDefault openVideo={openVideo} scrollToSection={scrollToSection} />
         <SectionTeamDefault profiles={PROFILES} openProfile={openProfile} />
@@ -157,10 +161,10 @@ function HomeClientContent() {
   );
 }
 
-export default function HomeClient() {
+export default function HomeClient({ client }: { client: string }) {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <HomeClientContent />
+      <HomeClientContent client={client} />
     </Suspense>
   );
 }
